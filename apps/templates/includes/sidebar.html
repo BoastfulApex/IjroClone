@@ -1,0 +1,42 @@
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="https://i.pinimg.com/originals/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="{% url 'logout' %}" class="d-block">
+            {{ request.user.username }} - Chiqish
+          </a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-si debar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <li class="nav-item ">
+              <li class="nav-item">
+                <a href="{% url 'generator' %}" class="nav-link {% if 'generate' in segment %} active {% endif %}">
+                  <i class="nav-icon fas fa-qrcode"></i>
+                  <p>QrCode Genratsiya</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{% url 'add_file' %}" class="nav-link {% if 'add_file' in segment %} active {% endif %}">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>Fayl Qo'shish</p>
+                </a>
+              </li>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+  

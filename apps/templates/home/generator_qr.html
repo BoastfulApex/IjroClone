@@ -1,0 +1,121 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+
+{% block title %} QrCode generatsiya {% endblock %}
+
+<!-- Element injected in the BODY element -->
+{% block body_class %} sidebar-mini {% endblock body_class %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{% static '/plugins/fontawesome-free/css/all.min.css' %}">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="{{ ASSETS_ROOT }}/css/adminlte.min.css">
+    <style>
+        .copy-container {
+            display: flex;
+            align-items: center;
+        }
+
+        #text-to-copy {
+            margin-right: 10px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .copy-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+{% endblock stylesheets %}
+
+{% block content %}
+  <div class="content-wrapper">
+    <section class="content-header">
+      <div class="container-fluid">
+          {% if url %}
+            <div class="row mb-2">
+
+                <div class="container">
+                    <a href="{{ docs.PhotoURL }}" download="custom_filename.png">
+                        <img src="{{ docs.PhotoURL }}" alt="Image for Download">
+                    </a>
+                    <br>
+                    <br>
+                    <span id="text-to-copy">{{ url }}</span>
+                    <button class="copy-button" onclick="copyToClipboard()">Buferga nusxalash</button>
+                </div>
+            </div>
+          {% endif %}
+        <div class="row mb-2">
+        <form method="post" action="{% url 'generate_qr' %}">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-success">QrCode</button>
+        </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+{% endblock content %}
+
+{% block javascripts %}
+
+  <!-- jQuery -->
+  <script src="{{ ASSETS_ROOT }}/plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="{{ ASSETS_ROOT }}/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE -->
+  <script src="{{ ASSETS_ROOT }}/js/adminlte.js"></script>
+
+  <!-- OPTIONAL SCRIPTS -->
+  <script src="{{ ASSETS_ROOT }}/plugins/chart.js/Chart.min.js"></script>
+  <script src="{{ ASSETS_ROOT }}/js/demo.js"></script>
+  <script src="{{ ASSETS_ROOT }}/js/pages/dashboard3.js"></script>
+
+
+    <script>
+function copyToClipboard() {
+  // Get the text to copy
+  const textToCopy = document.getElementById('text-to-copy');
+
+  // Create a temporary input element and set its value to the text to copy
+  const tempInput = document.createElement('input');
+  tempInput.value = textToCopy.innerText;
+
+  // Append the temporary input element to the document
+  document.body.appendChild(tempInput);
+
+  // Select the text in the input element
+  tempInput.select();
+
+  // Copy the selected text to the clipboard
+  document.execCommand('copy');
+
+  // Remove the temporary input element from the document
+  document.body.removeChild(tempInput);
+
+  // Optionally, you can provide some visual feedback to the user
+  alert('Text copied to clipboard!');
+}
+</script>
+
+{% endblock javascripts %}
