@@ -15,8 +15,8 @@ def generate_random_string():
 
 class DocsObjects(models.Model):
     id = models.CharField(max_length=10, primary_key=True, default=generate_random_string, editable=False)
-    file = models.FileField(null=True, upload_to='files/')
-    qrcode = models.ImageField(null=True, blank=True, upload_to='files/')
+    file = models.FileField(null=True)
+    qrcode = models.ImageField(null=True, blank=True)
     document_address = models.CharField(max_length=200, null=True)
     date = models.DateField(null=True)
     who_signed = models.CharField(max_length=200, null=True)

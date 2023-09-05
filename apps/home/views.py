@@ -86,7 +86,6 @@ def file_input_view(request):
 def generate_qr_code(request):
     if request.method == "POST":
         docs = DocsObjects.objects.create()
-        docs.save()
         url = f'https://check.ijra.uz/d/{docs.id}'
         q = qrcode.make(url)
         q.save('qrcode.png')
