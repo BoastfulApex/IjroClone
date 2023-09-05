@@ -1,77 +1,1079 @@
 <!DOCTYPE html>
 {% load static %}
 <!-- saved from url=(0034)https://check.ijro.uz/d/JD47057310 -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>check.ijro.uz</title>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>check.ijro.uz</title>
 
-        <meta name="description" content="Admin Template and Starter Kit with Angular, Angular Material Components and TailwindCSS">
-        <meta name="keywords" content="IJRO,HTML,CSS,Angular,Angular 2,Angular 10,Angular 11,Angular 12,Material,Material 2,Angular Components,Tailwind,Tailwind CSS,TailwindCSS,Admin Template,Admin Starter Kit">
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="description"
+          content="Admin Template and Starter Kit with Angular, Angular Material Components and TailwindCSS">
+    <meta name="keywords"
+          content="IJRO,HTML,CSS,Angular,Angular 2,Angular 10,Angular 11,Angular 12,Material,Material 2,Angular Components,Tailwind,Tailwind CSS,TailwindCSS,Admin Template,Admin Starter Kit">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
 
-        <!--<base href="/">--><base href=".">
+    <!--<base href="/">-->
+    <base href=".">
 
-        <!-- Favicon -->
-        <link rel="icon" type="image/png" href="https://check.ijro.uz/favicon-16x16.png">
-        <link rel="icon" type="image/png" href="https://check.ijro.uz/favicon-32x32.png">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://check.ijro.uz/favicon-16x16.png">
+    <link rel="icon" type="image/png" href="https://check.ijro.uz/favicon-32x32.png">
 
-        <!-- Fonts -->
-        <link href="{% static 'inter.css' %}" rel="stylesheet" media="all" onload="this.media=&#39;all&#39;"><noscript><link rel="stylesheet" href="{% static 'inter.css' %}"></noscript>
+    <!-- Fonts -->
+    <link href="{% static 'inter.css' %}" rel="stylesheet" media="all" onload="this.media=&#39;all&#39;">
+    <noscript>
+        <link rel="stylesheet" href="{% static 'inter.css' %}">
+    </noscript>
 
-        <link href="https://fonts.gstatic.com/" rel="preconnect">
-        <style type="text/css">@font-face{font-family:'IBM Plex Mono';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6pfjptAgt5VM-kVkqdyU8n1ioa2HdgregdFOFh.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'IBM Plex Mono';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6pfjptAgt5VM-kVkqdyU8n1ioa0XdgregdFOFh.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'IBM Plex Mono';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6pfjptAgt5VM-kVkqdyU8n1ioa2ndgregdFOFh.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'IBM Plex Mono';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6pfjptAgt5VM-kVkqdyU8n1ioa23dgregdFOFh.woff2) format('woff2');unicode-range:U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'IBM Plex Mono';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6pfjptAgt5VM-kVkqdyU8n1ioa1XdgregdFA.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F63fjptAgt5VM-kVkqdyU8n1iIq131nj-otFQ.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F63fjptAgt5VM-kVkqdyU8n1isq131nj-otFQ.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F63fjptAgt5VM-kVkqdyU8n1iAq131nj-otFQ.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F63fjptAgt5VM-kVkqdyU8n1iEq131nj-otFQ.woff2) format('woff2');unicode-range:U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F63fjptAgt5VM-kVkqdyU8n1i8q131nj-o.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6qfjptAgt5VM-kVkqdyU8n3twJwl1FgsAXHNlYzg.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6qfjptAgt5VM-kVkqdyU8n3twJwlRFgsAXHNlYzg.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6qfjptAgt5VM-kVkqdyU8n3twJwl9FgsAXHNlYzg.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6qfjptAgt5VM-kVkqdyU8n3twJwl5FgsAXHNlYzg.woff2) format('woff2');unicode-range:U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6qfjptAgt5VM-kVkqdyU8n3twJwlBFgsAXHNk.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6qfjptAgt5VM-kVkqdyU8n3vAOwl1FgsAXHNlYzg.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6qfjptAgt5VM-kVkqdyU8n3vAOwlRFgsAXHNlYzg.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6qfjptAgt5VM-kVkqdyU8n3vAOwl9FgsAXHNlYzg.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6qfjptAgt5VM-kVkqdyU8n3vAOwl5FgsAXHNlYzg.woff2) format('woff2');unicode-range:U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6qfjptAgt5VM-kVkqdyU8n3vAOwlBFgsAXHNk.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}</style>
+    <link href="https://fonts.gstatic.com/" rel="preconnect">
+    <style type="text/css">@font-face {
+        font-family: 'IBM Plex Mono';
+        font-style: italic;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6pfjptAgt5VM-kVkqdyU8n1ioa2HdgregdFOFh.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
 
-        <!-- Icon fonts -->
-        <style type="text/css">@font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/materialicons/v140/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');}.material-icons{font-family:'Material Icons';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased;}</style>
+    @font-face {
+        font-family: 'IBM Plex Mono';
+        font-style: italic;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6pfjptAgt5VM-kVkqdyU8n1ioa0XdgregdFOFh.woff2) format('woff2');
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
 
-        <!-- Splash screen styles -->
-        <style>body fuse-splash-screen{display:flex;flex-direction:column;align-items:center;justify-content:center;position:fixed;top:0;left:0;right:0;bottom:0;background-color:#111827;color:#F9FAFB;z-index:999999;pointer-events:none;opacity:1;visibility:visible;transition:opacity 400ms cubic-bezier(0.4, 0, 0.2, 1)}body fuse-splash-screen img{width:120px;max-width:120px}body fuse-splash-screen .spinner{display:flex;align-items:center;justify-content:space-between;margin-top:40px;width:56px}body fuse-splash-screen .spinner > div{width:12px;height:12px;background-color:#1E96F7;border-radius:100%;display:inline-block;-webkit-animation:fuse-bouncedelay 1s infinite ease-in-out both;animation:fuse-bouncedelay 1s infinite ease-in-out both}body fuse-splash-screen .spinner .bounce1{-webkit-animation-delay:-0.32s;animation-delay:-0.32s}body fuse-splash-screen .spinner .bounce2{-webkit-animation-delay:-0.16s;animation-delay:-0.16s}@keyframes fuse-bouncedelay{0%,80%,100%{-webkit-transform:scale(0);transform:scale(0)}40%{-webkit-transform:scale(1.0);transform:scale(1.0)}}body:not(.fuse-splash-screen-hidden){overflow:hidden}</style><link href="{% static 'splash-screen.css' %}" rel="stylesheet" media="all" onload="this.media=&#39;all&#39;"><noscript><link rel="stylesheet" href="{% static 'splash-screen.css' %}"></noscript>
+    @font-face {
+        font-family: 'IBM Plex Mono';
+        font-style: italic;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6pfjptAgt5VM-kVkqdyU8n1ioa2ndgregdFOFh.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+    }
 
-        <script type="text/javascript" src="{% static 'emicrypter.js.Без названия' %}"></script>
-        <script>
-            var global = global || window;
-            var Buffer = Buffer || [];
-            var process = process || {
-                env: { DEBUG: undefined },
-                version: []
-            };
-            var icrypter = null;
-            const TYPE_TEXT = 0;
-            const TYPE_BASE64 = 1;
-            const TYPE_HEX = 2;
-            Module.onRuntimeInitialized = _ => {
-                icrypter = Module.cwrap('icrypter', 'string', ['string']);
-                icrypter_encrypt = Module.cwrap('icrypter_encrypt', 'number', ['number', 'number', 'number', 'number']);
-                icrypter_decrypt = Module.cwrap('icrypter_decrypt', 'number', ['number', 'number', 'number', 'number']);
-                const v = JSON.parse(icrypter(JSON.stringify({meth: "version"})));
+    @font-face {
+        font-family: 'IBM Plex Mono';
+        font-style: italic;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6pfjptAgt5VM-kVkqdyU8n1ioa23dgregdFOFh.woff2) format('woff2');
+        unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+        font-family: 'IBM Plex Mono';
+        font-style: italic;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6pfjptAgt5VM-kVkqdyU8n1ioa1XdgregdFA.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+        font-family: 'IBM Plex Mono';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F63fjptAgt5VM-kVkqdyU8n1iIq131nj-otFQ.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    @font-face {
+        font-family: 'IBM Plex Mono';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F63fjptAgt5VM-kVkqdyU8n1isq131nj-otFQ.woff2) format('woff2');
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    @font-face {
+        font-family: 'IBM Plex Mono';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F63fjptAgt5VM-kVkqdyU8n1iAq131nj-otFQ.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+    }
+
+    @font-face {
+        font-family: 'IBM Plex Mono';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F63fjptAgt5VM-kVkqdyU8n1iEq131nj-otFQ.woff2) format('woff2');
+        unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+        font-family: 'IBM Plex Mono';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F63fjptAgt5VM-kVkqdyU8n1i8q131nj-o.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+        font-family: 'IBM Plex Mono';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6qfjptAgt5VM-kVkqdyU8n3twJwl1FgsAXHNlYzg.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    @font-face {
+        font-family: 'IBM Plex Mono';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6qfjptAgt5VM-kVkqdyU8n3twJwlRFgsAXHNlYzg.woff2) format('woff2');
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    @font-face {
+        font-family: 'IBM Plex Mono';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6qfjptAgt5VM-kVkqdyU8n3twJwl9FgsAXHNlYzg.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+    }
+
+    @font-face {
+        font-family: 'IBM Plex Mono';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6qfjptAgt5VM-kVkqdyU8n3twJwl5FgsAXHNlYzg.woff2) format('woff2');
+        unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+        font-family: 'IBM Plex Mono';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6qfjptAgt5VM-kVkqdyU8n3twJwlBFgsAXHNk.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+        font-family: 'IBM Plex Mono';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6qfjptAgt5VM-kVkqdyU8n3vAOwl1FgsAXHNlYzg.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    @font-face {
+        font-family: 'IBM Plex Mono';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6qfjptAgt5VM-kVkqdyU8n3vAOwlRFgsAXHNlYzg.woff2) format('woff2');
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    @font-face {
+        font-family: 'IBM Plex Mono';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6qfjptAgt5VM-kVkqdyU8n3vAOwl9FgsAXHNlYzg.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+    }
+
+    @font-face {
+        font-family: 'IBM Plex Mono';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6qfjptAgt5VM-kVkqdyU8n3vAOwl5FgsAXHNlYzg.woff2) format('woff2');
+        unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+        font-family: 'IBM Plex Mono';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6qfjptAgt5VM-kVkqdyU8n3vAOwlBFgsAXHNk.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }</style>
+
+    <!-- Icon fonts -->
+    <style type="text/css">@font-face {
+        font-family: 'Material Icons';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/materialicons/v140/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
+    }
+
+    .material-icons {
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        -webkit-font-feature-settings: 'liga';
+        -webkit-font-smoothing: antialiased;
+    }</style>
+
+    <!-- Splash screen styles -->
+    <style>body fuse-splash-screen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #111827;
+        color: #F9FAFB;
+        z-index: 999999;
+        pointer-events: none;
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 400ms cubic-bezier(0.4, 0, 0.2, 1)
+    }
+
+    body fuse-splash-screen img {
+        width: 120px;
+        max-width: 120px
+    }
+
+    body fuse-splash-screen .spinner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 40px;
+        width: 56px
+    }
+
+    body fuse-splash-screen .spinner > div {
+        width: 12px;
+        height: 12px;
+        background-color: #1E96F7;
+        border-radius: 100%;
+        display: inline-block;
+        -webkit-animation: fuse-bouncedelay 1s infinite ease-in-out both;
+        animation: fuse-bouncedelay 1s infinite ease-in-out both
+    }
+
+    body fuse-splash-screen .spinner .bounce1 {
+        -webkit-animation-delay: -0.32s;
+        animation-delay: -0.32s
+    }
+
+    body fuse-splash-screen .spinner .bounce2 {
+        -webkit-animation-delay: -0.16s;
+        animation-delay: -0.16s
+    }
+
+    @keyframes fuse-bouncedelay {
+        0%, 80%, 100% {
+            -webkit-transform: scale(0);
+            transform: scale(0)
+        }
+        40% {
+            -webkit-transform: scale(1.0);
+            transform: scale(1.0)
+        }
+    }
+
+    body:not(.fuse-splash-screen-hidden) {
+        overflow: hidden
+    }</style>
+    <link href="{% static 'splash-screen.css' %}" rel="stylesheet" media="all" onload="this.media=&#39;all&#39;">
+    <noscript>
+        <link rel="stylesheet" href="assets/styles/splash-screen.css">
+    </noscript>
+
+    <script type="text/javascript" src="{% static 'emicrypter.js.Без названия' %}"></script>
+    <script>
+        var global = global || window;
+        var Buffer = Buffer || [];
+        var process = process || {
+            env: {DEBUG: undefined},
+            version: []
+        };
+        var icrypter = null;
+        const TYPE_TEXT = 0;
+        const TYPE_BASE64 = 1;
+        const TYPE_HEX = 2;
+        Module.onRuntimeInitialized = _ => {
+            icrypter = Module.cwrap('icrypter', 'string', ['string']);
+            icrypter_encrypt = Module.cwrap('icrypter_encrypt', 'number', ['number', 'number', 'number', 'number']);
+            icrypter_decrypt = Module.cwrap('icrypter_decrypt', 'number', ['number', 'number', 'number', 'number']);
+            const v = JSON.parse(icrypter(JSON.stringify({meth: "version"})));
+        }
+
+        function UZDST_generateHash(value) {
+            if (icrypter) {
+                const args = {meth: "hash", data: value, type: TYPE_TEXT};
+                return JSON.parse(icrypter(JSON.stringify(args)));
             }
+        }
 
-            function UZDST_generateHash(value) {
-                if (icrypter){
-                    const args = {meth: "hash", data: value, type: TYPE_TEXT};
-                    return JSON.parse(icrypter(JSON.stringify(args)));
-                }
+        function UZDST_generateSignature(digest, token = null, pkey = null, cert = null) {
+            if (icrypter) {
+                var args = {meth: "sign", data: digest, token: token, pkey: pkey, cert: cert};
+                return JSON.parse(icrypter(JSON.stringify(args)));
             }
+        }
 
-            function UZDST_generateSignature(digest, token = null, pkey = null, cert = null) {
-                if (icrypter){
-                    var args = {meth: "sign", data: digest, token: token, pkey: pkey, cert: cert};
-                    return  JSON.parse(icrypter(JSON.stringify(args)));
-                }
+        function UZDST_certificateParse(certificate) {
+            if (icrypter) {
+                const args = {meth: "cert", cert: certificate};
+                return JSON.parse(icrypter(JSON.stringify(args)));
             }
+        }
+    </script>
 
-            function UZDST_certificateParse(certificate) {
-                if (icrypter){
-                    const args = {meth: "cert", cert: certificate};
-                    return JSON.parse(icrypter(JSON.stringify(args)));
-                }
-            }
-        </script>
+    <style>@charset "UTF-8";
+    html {
+        tab-size: 4;
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%
+    }
 
-    <style>@charset "UTF-8";html{tab-size:4;line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji}html{font-family:Inter var,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}body{font-family:inherit;line-height:inherit}*,:after,:before{box-sizing:border-box;border:0 solid}img{border-style:solid}img{display:block;vertical-align:middle}img{max-width:100%;height:auto}*,:after,:before{--tw-border-opacity:1;border-color:rgba(226,232,240,var(--tw-border-opacity))}*{text-rendering:optimizeLegibility;-o-text-rendering:optimizeLegibility;-ms-text-rendering:optimizeLegibility;-moz-text-rendering:optimizeLegibility;-webkit-text-rendering:optimizeLegibility;-webkit-tap-highlight-color:transparent}body,html{display:flex;flex-direction:column;flex:1 1 auto;width:100%;min-height:100%;-webkit-font-smoothing:auto;-moz-osx-font-smoothing:auto}html{font-size:16px}body{font-size:.875rem;font-feature-settings:"salt"}img{width:100%;vertical-align:top}body{--tw-text-opacity:1!important;color:rgba(var(--fuse-text-default-rgb),var(--tw-text-opacity))!important;--tw-bg-opacity:1!important;background-color:rgba(var(--fuse-bg-default-rgb),var(--tw-bg-opacity))!important}*,:after,:before{--tw-border-opacity:1!important;border-color:rgba(var(--fuse-border-rgb),var(--tw-border-opacity))}@media print{html{font-size:12px!important}body{background:none!important}}body{--fuse-primary-50:#eef2ff;--fuse-primary-50-rgb:238,242,255;--fuse-primary-100:#e0e7ff;--fuse-primary-100-rgb:224,231,255;--fuse-primary-200:#c7d2fe;--fuse-primary-200-rgb:199,210,254;--fuse-primary-300:#a5b4fc;--fuse-primary-300-rgb:165,180,252;--fuse-primary-400:#818cf8;--fuse-primary-400-rgb:129,140,248;--fuse-primary-500:#6366f1;--fuse-primary-500-rgb:99,102,241;--fuse-primary-600:#4f46e5;--fuse-primary-600-rgb:79,70,229;--fuse-primary-700:#4338ca;--fuse-primary-700-rgb:67,56,202;--fuse-primary-800:#3730a3;--fuse-primary-800-rgb:55,48,163;--fuse-primary-900:#312e81;--fuse-primary-900-rgb:49,46,129;--fuse-primary:#4f46e5;--fuse-primary-rgb:79,70,229;--fuse-on-primary-50:#312e81;--fuse-on-primary-50-rgb:49,46,129;--fuse-on-primary-100:#312e81;--fuse-on-primary-100-rgb:49,46,129;--fuse-on-primary-200:#312e81;--fuse-on-primary-200-rgb:49,46,129;--fuse-on-primary-300:#312e81;--fuse-on-primary-300-rgb:49,46,129;--fuse-on-primary-400:#312e81;--fuse-on-primary-400-rgb:49,46,129;--fuse-on-primary-500:#fff;--fuse-on-primary-500-rgb:255,255,255;--fuse-on-primary-600:#fff;--fuse-on-primary-600-rgb:255,255,255;--fuse-on-primary-700:#fff;--fuse-on-primary-700-rgb:255,255,255;--fuse-on-primary-800:#fff;--fuse-on-primary-800-rgb:255,255,255;--fuse-on-primary-900:#fff;--fuse-on-primary-900-rgb:255,255,255;--fuse-on-primary:#fff;--fuse-on-primary-rgb:255,255,255;--fuse-accent-50:#f8fafc;--fuse-accent-50-rgb:248,250,252;--fuse-accent-100:#f1f5f9;--fuse-accent-100-rgb:241,245,249;--fuse-accent-200:#e2e8f0;--fuse-accent-200-rgb:226,232,240;--fuse-accent-300:#cbd5e1;--fuse-accent-300-rgb:203,213,225;--fuse-accent-400:#94a3b8;--fuse-accent-400-rgb:148,163,184;--fuse-accent-500:#64748b;--fuse-accent-500-rgb:100,116,139;--fuse-accent-600:#475569;--fuse-accent-600-rgb:71,85,105;--fuse-accent-700:#334155;--fuse-accent-700-rgb:51,65,85;--fuse-accent-800:#1e293b;--fuse-accent-800-rgb:30,41,59;--fuse-accent-900:#0f172a;--fuse-accent-900-rgb:15,23,42;--fuse-accent:#1e293b;--fuse-accent-rgb:30,41,59;--fuse-on-accent-50:#0f172a;--fuse-on-accent-50-rgb:15,23,42;--fuse-on-accent-100:#0f172a;--fuse-on-accent-100-rgb:15,23,42;--fuse-on-accent-200:#0f172a;--fuse-on-accent-200-rgb:15,23,42;--fuse-on-accent-300:#0f172a;--fuse-on-accent-300-rgb:15,23,42;--fuse-on-accent-400:#0f172a;--fuse-on-accent-400-rgb:15,23,42;--fuse-on-accent-500:#fff;--fuse-on-accent-500-rgb:255,255,255;--fuse-on-accent-600:#fff;--fuse-on-accent-600-rgb:255,255,255;--fuse-on-accent-700:#fff;--fuse-on-accent-700-rgb:255,255,255;--fuse-on-accent-800:#fff;--fuse-on-accent-800-rgb:255,255,255;--fuse-on-accent-900:#fff;--fuse-on-accent-900-rgb:255,255,255;--fuse-on-accent:#fff;--fuse-on-accent-rgb:255,255,255;--fuse-warn-50:#fef2f2;--fuse-warn-50-rgb:254,242,242;--fuse-warn-100:#fee2e2;--fuse-warn-100-rgb:254,226,226;--fuse-warn-200:#fecaca;--fuse-warn-200-rgb:254,202,202;--fuse-warn-300:#fca5a5;--fuse-warn-300-rgb:252,165,165;--fuse-warn-400:#f87171;--fuse-warn-400-rgb:248,113,113;--fuse-warn-500:#ef4444;--fuse-warn-500-rgb:239,68,68;--fuse-warn-600:#dc2626;--fuse-warn-600-rgb:220,38,38;--fuse-warn-700:#b91c1c;--fuse-warn-700-rgb:185,28,28;--fuse-warn-800:#991b1b;--fuse-warn-800-rgb:153,27,27;--fuse-warn-900:#7f1d1d;--fuse-warn-900-rgb:127,29,29;--fuse-warn:#dc2626;--fuse-warn-rgb:220,38,38;--fuse-on-warn-50:#7f1d1d;--fuse-on-warn-50-rgb:127,29,29;--fuse-on-warn-100:#7f1d1d;--fuse-on-warn-100-rgb:127,29,29;--fuse-on-warn-200:#7f1d1d;--fuse-on-warn-200-rgb:127,29,29;--fuse-on-warn-300:#7f1d1d;--fuse-on-warn-300-rgb:127,29,29;--fuse-on-warn-400:#7f1d1d;--fuse-on-warn-400-rgb:127,29,29;--fuse-on-warn-500:#fef2f2;--fuse-on-warn-500-rgb:254,242,242;--fuse-on-warn-600:#fff;--fuse-on-warn-600-rgb:255,255,255;--fuse-on-warn-700:#fff;--fuse-on-warn-700-rgb:255,255,255;--fuse-on-warn-800:#fff;--fuse-on-warn-800-rgb:255,255,255;--fuse-on-warn-900:#fff;--fuse-on-warn-900-rgb:255,255,255;--fuse-on-warn:#fff;--fuse-on-warn-rgb:255,255,255}*,:after,:before{--tw-shadow:0 0 #0000}*,:after,:before{--tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:#3b82f680;--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000}</style><link rel="stylesheet" href="{% static 'styles.7db30c1f099a90d38266.css' %}" media="all" onload="this.media=&#39;all&#39;"><noscript><link rel="stylesheet" href="styles.7db30c1f099a90d38266.css"></noscript><style type="text/css"></style><style>[_nghost-oia-c77]{display:flex;flex:1 1 auto;width:100%;height:100%}</style><style>layout{display:flex;flex:1 1 auto;width:100%;max-width:100%;min-width:0}layout>*{position:relative;display:flex;flex:1 1 auto;width:100%}layout router-outlet+*{position:relative;display:flex;flex:1 1 auto;width:100%}
-</style><style>.mat-button .mat-button-focus-overlay,.mat-icon-button .mat-button-focus-overlay{opacity:0}.mat-button:hover:not(.mat-button-disabled) .mat-button-focus-overlay,.mat-stroked-button:hover:not(.mat-button-disabled) .mat-button-focus-overlay{opacity:.04}@media(hover: none){.mat-button:hover:not(.mat-button-disabled) .mat-button-focus-overlay,.mat-stroked-button:hover:not(.mat-button-disabled) .mat-button-focus-overlay{opacity:0}}.mat-button,.mat-icon-button,.mat-stroked-button,.mat-flat-button{box-sizing:border-box;position:relative;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer;outline:none;border:none;-webkit-tap-highlight-color:transparent;display:inline-block;white-space:nowrap;text-decoration:none;vertical-align:baseline;text-align:center;margin:0;min-width:64px;line-height:36px;padding:0 16px;border-radius:4px;overflow:visible}.mat-button::-moz-focus-inner,.mat-icon-button::-moz-focus-inner,.mat-stroked-button::-moz-focus-inner,.mat-flat-button::-moz-focus-inner{border:0}.mat-button.mat-button-disabled,.mat-icon-button.mat-button-disabled,.mat-stroked-button.mat-button-disabled,.mat-flat-button.mat-button-disabled{cursor:default}.mat-button.cdk-keyboard-focused .mat-button-focus-overlay,.mat-button.cdk-program-focused .mat-button-focus-overlay,.mat-icon-button.cdk-keyboard-focused .mat-button-focus-overlay,.mat-icon-button.cdk-program-focused .mat-button-focus-overlay,.mat-stroked-button.cdk-keyboard-focused .mat-button-focus-overlay,.mat-stroked-button.cdk-program-focused .mat-button-focus-overlay,.mat-flat-button.cdk-keyboard-focused .mat-button-focus-overlay,.mat-flat-button.cdk-program-focused .mat-button-focus-overlay{opacity:.12}.mat-button::-moz-focus-inner,.mat-icon-button::-moz-focus-inner,.mat-stroked-button::-moz-focus-inner,.mat-flat-button::-moz-focus-inner{border:0}.mat-raised-button{box-sizing:border-box;position:relative;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer;outline:none;border:none;-webkit-tap-highlight-color:transparent;display:inline-block;white-space:nowrap;text-decoration:none;vertical-align:baseline;text-align:center;margin:0;min-width:64px;line-height:36px;padding:0 16px;border-radius:4px;overflow:visible;transform:translate3d(0, 0, 0);transition:background 400ms cubic-bezier(0.25, 0.8, 0.25, 1),box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1)}.mat-raised-button::-moz-focus-inner{border:0}.mat-raised-button.mat-button-disabled{cursor:default}.mat-raised-button.cdk-keyboard-focused .mat-button-focus-overlay,.mat-raised-button.cdk-program-focused .mat-button-focus-overlay{opacity:.12}.mat-raised-button::-moz-focus-inner{border:0}._mat-animation-noopable.mat-raised-button{transition:none;animation:none}.mat-stroked-button{border:1px solid currentColor;padding:0 15px;line-height:34px}.mat-stroked-button .mat-button-ripple.mat-ripple,.mat-stroked-button .mat-button-focus-overlay{top:-1px;left:-1px;right:-1px;bottom:-1px}.mat-fab{box-sizing:border-box;position:relative;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer;outline:none;border:none;-webkit-tap-highlight-color:transparent;display:inline-block;white-space:nowrap;text-decoration:none;vertical-align:baseline;text-align:center;margin:0;min-width:64px;line-height:36px;padding:0 16px;border-radius:4px;overflow:visible;transform:translate3d(0, 0, 0);transition:background 400ms cubic-bezier(0.25, 0.8, 0.25, 1),box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);min-width:0;border-radius:50%;width:56px;height:56px;padding:0;flex-shrink:0}.mat-fab::-moz-focus-inner{border:0}.mat-fab.mat-button-disabled{cursor:default}.mat-fab.cdk-keyboard-focused .mat-button-focus-overlay,.mat-fab.cdk-program-focused .mat-button-focus-overlay{opacity:.12}.mat-fab::-moz-focus-inner{border:0}._mat-animation-noopable.mat-fab{transition:none;animation:none}.mat-fab .mat-button-wrapper{padding:16px 0;display:inline-block;line-height:24px}.mat-mini-fab{box-sizing:border-box;position:relative;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer;outline:none;border:none;-webkit-tap-highlight-color:transparent;display:inline-block;white-space:nowrap;text-decoration:none;vertical-align:baseline;text-align:center;margin:0;min-width:64px;line-height:36px;padding:0 16px;border-radius:4px;overflow:visible;transform:translate3d(0, 0, 0);transition:background 400ms cubic-bezier(0.25, 0.8, 0.25, 1),box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);min-width:0;border-radius:50%;width:40px;height:40px;padding:0;flex-shrink:0}.mat-mini-fab::-moz-focus-inner{border:0}.mat-mini-fab.mat-button-disabled{cursor:default}.mat-mini-fab.cdk-keyboard-focused .mat-button-focus-overlay,.mat-mini-fab.cdk-program-focused .mat-button-focus-overlay{opacity:.12}.mat-mini-fab::-moz-focus-inner{border:0}._mat-animation-noopable.mat-mini-fab{transition:none;animation:none}.mat-mini-fab .mat-button-wrapper{padding:8px 0;display:inline-block;line-height:24px}.mat-icon-button{padding:0;min-width:0;width:40px;height:40px;flex-shrink:0;line-height:40px;border-radius:50%}.mat-icon-button i,.mat-icon-button .mat-icon{line-height:24px}.mat-button-ripple.mat-ripple,.mat-button-focus-overlay{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-button-ripple.mat-ripple:not(:empty){transform:translateZ(0)}.mat-button-focus-overlay{opacity:0;transition:opacity 200ms cubic-bezier(0.35, 0, 0.25, 1),background-color 200ms cubic-bezier(0.35, 0, 0.25, 1)}._mat-animation-noopable .mat-button-focus-overlay{transition:none}.mat-button-ripple-round{border-radius:50%;z-index:1}.mat-button .mat-button-wrapper>*,.mat-flat-button .mat-button-wrapper>*,.mat-stroked-button .mat-button-wrapper>*,.mat-raised-button .mat-button-wrapper>*,.mat-icon-button .mat-button-wrapper>*,.mat-fab .mat-button-wrapper>*,.mat-mini-fab .mat-button-wrapper>*{vertical-align:middle}.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon-button,.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon-button{display:inline-flex;justify-content:center;align-items:center;font-size:inherit;width:2.5em;height:2.5em}.cdk-high-contrast-active .mat-button,.cdk-high-contrast-active .mat-flat-button,.cdk-high-contrast-active .mat-raised-button,.cdk-high-contrast-active .mat-icon-button,.cdk-high-contrast-active .mat-fab,.cdk-high-contrast-active .mat-mini-fab{outline:solid 1px}.cdk-high-contrast-active .mat-button-base.cdk-keyboard-focused,.cdk-high-contrast-active .mat-button-base.cdk-program-focused{outline:solid 3px}
-</style><style>.mat-icon{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-repeat:no-repeat;display:inline-block;fill:currentColor;height:24px;width:24px}.mat-icon.mat-icon-inline{font-size:inherit;height:inherit;line-height:inherit;width:inherit}[dir=rtl] .mat-icon-rtl-mirror{transform:scale(-1, 1)}.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon,.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon{display:block}.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon-button .mat-icon,.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon-button .mat-icon{margin:auto}
-</style><style></style><style>.mat-drawer-container{position:relative;z-index:1;box-sizing:border-box;-webkit-overflow-scrolling:touch;display:block;overflow:hidden}.mat-drawer-container[fullscreen]{top:0;left:0;right:0;bottom:0;position:absolute}.mat-drawer-container[fullscreen].mat-drawer-container-has-open{overflow:hidden}.mat-drawer-container.mat-drawer-container-explicit-backdrop .mat-drawer-side{z-index:3}.mat-drawer-container.ng-animate-disabled .mat-drawer-backdrop,.mat-drawer-container.ng-animate-disabled .mat-drawer-content,.ng-animate-disabled .mat-drawer-container .mat-drawer-backdrop,.ng-animate-disabled .mat-drawer-container .mat-drawer-content{transition:none}.mat-drawer-backdrop{top:0;left:0;right:0;bottom:0;position:absolute;display:block;z-index:3;visibility:hidden}.mat-drawer-backdrop.mat-drawer-shown{visibility:visible}.mat-drawer-transition .mat-drawer-backdrop{transition-duration:400ms;transition-timing-function:cubic-bezier(0.25, 0.8, 0.25, 1);transition-property:background-color,visibility}.cdk-high-contrast-active .mat-drawer-backdrop{opacity:.5}.mat-drawer-content{position:relative;z-index:1;display:block;height:100%;overflow:auto}.mat-drawer-transition .mat-drawer-content{transition-duration:400ms;transition-timing-function:cubic-bezier(0.25, 0.8, 0.25, 1);transition-property:transform,margin-left,margin-right}.mat-drawer{position:relative;z-index:4;display:block;position:absolute;top:0;bottom:0;z-index:3;outline:0;box-sizing:border-box;overflow-y:auto;transform:translate3d(-100%, 0, 0)}.cdk-high-contrast-active .mat-drawer,.cdk-high-contrast-active [dir=rtl] .mat-drawer.mat-drawer-end{border-right:solid 1px currentColor}.cdk-high-contrast-active [dir=rtl] .mat-drawer,.cdk-high-contrast-active .mat-drawer.mat-drawer-end{border-left:solid 1px currentColor;border-right:none}.mat-drawer.mat-drawer-side{z-index:2}.mat-drawer.mat-drawer-end{right:0;transform:translate3d(100%, 0, 0)}[dir=rtl] .mat-drawer{transform:translate3d(100%, 0, 0)}[dir=rtl] .mat-drawer.mat-drawer-end{left:0;right:auto;transform:translate3d(-100%, 0, 0)}.mat-drawer-inner-container{width:100%;height:100%;overflow:auto;-webkit-overflow-scrolling:touch}.mat-sidenav-fixed{position:fixed}
-</style><style>/*!
+    body {
+        margin: 0;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji
+    }
+
+    html {
+        font-family: Inter var, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        line-height: 1.5
+    }
+
+    body {
+        font-family: inherit;
+        line-height: inherit
+    }
+
+    *, :after, :before {
+        box-sizing: border-box;
+        border: 0 solid
+    }
+
+    img {
+        border-style: solid
+    }
+
+    img {
+        display: block;
+        vertical-align: middle
+    }
+
+    img {
+        max-width: 100%;
+        height: auto
+    }
+
+    *, :after, :before {
+        --tw-border-opacity: 1;
+        border-color: rgba(226, 232, 240, var(--tw-border-opacity))
+    }
+
+    * {
+        text-rendering: optimizeLegibility;
+        -o-text-rendering: optimizeLegibility;
+        -ms-text-rendering: optimizeLegibility;
+        -moz-text-rendering: optimizeLegibility;
+        -webkit-text-rendering: optimizeLegibility;
+        -webkit-tap-highlight-color: transparent
+    }
+
+    body, html {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        width: 100%;
+        min-height: 100%;
+        -webkit-font-smoothing: auto;
+        -moz-osx-font-smoothing: auto
+    }
+
+    html {
+        font-size: 16px
+    }
+
+    body {
+        font-size: .875rem;
+        font-feature-settings: "salt"
+    }
+
+    img {
+        width: 100%;
+        vertical-align: top
+    }
+
+    body {
+        --tw-text-opacity: 1 !important;
+        color: rgba(var(--fuse-text-default-rgb), var(--tw-text-opacity)) !important;
+        --tw-bg-opacity: 1 !important;
+        background-color: rgba(var(--fuse-bg-default-rgb), var(--tw-bg-opacity)) !important
+    }
+
+    *, :after, :before {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--fuse-border-rgb), var(--tw-border-opacity))
+    }
+
+    @media print {
+        html {
+            font-size: 12px !important
+        }
+
+        body {
+            background: none !important
+        }
+    }
+
+    body {
+        --fuse-primary-50: #eef2ff;
+        --fuse-primary-50-rgb: 238, 242, 255;
+        --fuse-primary-100: #e0e7ff;
+        --fuse-primary-100-rgb: 224, 231, 255;
+        --fuse-primary-200: #c7d2fe;
+        --fuse-primary-200-rgb: 199, 210, 254;
+        --fuse-primary-300: #a5b4fc;
+        --fuse-primary-300-rgb: 165, 180, 252;
+        --fuse-primary-400: #818cf8;
+        --fuse-primary-400-rgb: 129, 140, 248;
+        --fuse-primary-500: #6366f1;
+        --fuse-primary-500-rgb: 99, 102, 241;
+        --fuse-primary-600: #4f46e5;
+        --fuse-primary-600-rgb: 79, 70, 229;
+        --fuse-primary-700: #4338ca;
+        --fuse-primary-700-rgb: 67, 56, 202;
+        --fuse-primary-800: #3730a3;
+        --fuse-primary-800-rgb: 55, 48, 163;
+        --fuse-primary-900: #312e81;
+        --fuse-primary-900-rgb: 49, 46, 129;
+        --fuse-primary: #4f46e5;
+        --fuse-primary-rgb: 79, 70, 229;
+        --fuse-on-primary-50: #312e81;
+        --fuse-on-primary-50-rgb: 49, 46, 129;
+        --fuse-on-primary-100: #312e81;
+        --fuse-on-primary-100-rgb: 49, 46, 129;
+        --fuse-on-primary-200: #312e81;
+        --fuse-on-primary-200-rgb: 49, 46, 129;
+        --fuse-on-primary-300: #312e81;
+        --fuse-on-primary-300-rgb: 49, 46, 129;
+        --fuse-on-primary-400: #312e81;
+        --fuse-on-primary-400-rgb: 49, 46, 129;
+        --fuse-on-primary-500: #fff;
+        --fuse-on-primary-500-rgb: 255, 255, 255;
+        --fuse-on-primary-600: #fff;
+        --fuse-on-primary-600-rgb: 255, 255, 255;
+        --fuse-on-primary-700: #fff;
+        --fuse-on-primary-700-rgb: 255, 255, 255;
+        --fuse-on-primary-800: #fff;
+        --fuse-on-primary-800-rgb: 255, 255, 255;
+        --fuse-on-primary-900: #fff;
+        --fuse-on-primary-900-rgb: 255, 255, 255;
+        --fuse-on-primary: #fff;
+        --fuse-on-primary-rgb: 255, 255, 255;
+        --fuse-accent-50: #f8fafc;
+        --fuse-accent-50-rgb: 248, 250, 252;
+        --fuse-accent-100: #f1f5f9;
+        --fuse-accent-100-rgb: 241, 245, 249;
+        --fuse-accent-200: #e2e8f0;
+        --fuse-accent-200-rgb: 226, 232, 240;
+        --fuse-accent-300: #cbd5e1;
+        --fuse-accent-300-rgb: 203, 213, 225;
+        --fuse-accent-400: #94a3b8;
+        --fuse-accent-400-rgb: 148, 163, 184;
+        --fuse-accent-500: #64748b;
+        --fuse-accent-500-rgb: 100, 116, 139;
+        --fuse-accent-600: #475569;
+        --fuse-accent-600-rgb: 71, 85, 105;
+        --fuse-accent-700: #334155;
+        --fuse-accent-700-rgb: 51, 65, 85;
+        --fuse-accent-800: #1e293b;
+        --fuse-accent-800-rgb: 30, 41, 59;
+        --fuse-accent-900: #0f172a;
+        --fuse-accent-900-rgb: 15, 23, 42;
+        --fuse-accent: #1e293b;
+        --fuse-accent-rgb: 30, 41, 59;
+        --fuse-on-accent-50: #0f172a;
+        --fuse-on-accent-50-rgb: 15, 23, 42;
+        --fuse-on-accent-100: #0f172a;
+        --fuse-on-accent-100-rgb: 15, 23, 42;
+        --fuse-on-accent-200: #0f172a;
+        --fuse-on-accent-200-rgb: 15, 23, 42;
+        --fuse-on-accent-300: #0f172a;
+        --fuse-on-accent-300-rgb: 15, 23, 42;
+        --fuse-on-accent-400: #0f172a;
+        --fuse-on-accent-400-rgb: 15, 23, 42;
+        --fuse-on-accent-500: #fff;
+        --fuse-on-accent-500-rgb: 255, 255, 255;
+        --fuse-on-accent-600: #fff;
+        --fuse-on-accent-600-rgb: 255, 255, 255;
+        --fuse-on-accent-700: #fff;
+        --fuse-on-accent-700-rgb: 255, 255, 255;
+        --fuse-on-accent-800: #fff;
+        --fuse-on-accent-800-rgb: 255, 255, 255;
+        --fuse-on-accent-900: #fff;
+        --fuse-on-accent-900-rgb: 255, 255, 255;
+        --fuse-on-accent: #fff;
+        --fuse-on-accent-rgb: 255, 255, 255;
+        --fuse-warn-50: #fef2f2;
+        --fuse-warn-50-rgb: 254, 242, 242;
+        --fuse-warn-100: #fee2e2;
+        --fuse-warn-100-rgb: 254, 226, 226;
+        --fuse-warn-200: #fecaca;
+        --fuse-warn-200-rgb: 254, 202, 202;
+        --fuse-warn-300: #fca5a5;
+        --fuse-warn-300-rgb: 252, 165, 165;
+        --fuse-warn-400: #f87171;
+        --fuse-warn-400-rgb: 248, 113, 113;
+        --fuse-warn-500: #ef4444;
+        --fuse-warn-500-rgb: 239, 68, 68;
+        --fuse-warn-600: #dc2626;
+        --fuse-warn-600-rgb: 220, 38, 38;
+        --fuse-warn-700: #b91c1c;
+        --fuse-warn-700-rgb: 185, 28, 28;
+        --fuse-warn-800: #991b1b;
+        --fuse-warn-800-rgb: 153, 27, 27;
+        --fuse-warn-900: #7f1d1d;
+        --fuse-warn-900-rgb: 127, 29, 29;
+        --fuse-warn: #dc2626;
+        --fuse-warn-rgb: 220, 38, 38;
+        --fuse-on-warn-50: #7f1d1d;
+        --fuse-on-warn-50-rgb: 127, 29, 29;
+        --fuse-on-warn-100: #7f1d1d;
+        --fuse-on-warn-100-rgb: 127, 29, 29;
+        --fuse-on-warn-200: #7f1d1d;
+        --fuse-on-warn-200-rgb: 127, 29, 29;
+        --fuse-on-warn-300: #7f1d1d;
+        --fuse-on-warn-300-rgb: 127, 29, 29;
+        --fuse-on-warn-400: #7f1d1d;
+        --fuse-on-warn-400-rgb: 127, 29, 29;
+        --fuse-on-warn-500: #fef2f2;
+        --fuse-on-warn-500-rgb: 254, 242, 242;
+        --fuse-on-warn-600: #fff;
+        --fuse-on-warn-600-rgb: 255, 255, 255;
+        --fuse-on-warn-700: #fff;
+        --fuse-on-warn-700-rgb: 255, 255, 255;
+        --fuse-on-warn-800: #fff;
+        --fuse-on-warn-800-rgb: 255, 255, 255;
+        --fuse-on-warn-900: #fff;
+        --fuse-on-warn-900-rgb: 255, 255, 255;
+        --fuse-on-warn: #fff;
+        --fuse-on-warn-rgb: 255, 255, 255
+    }
+
+    *, :after, :before {
+        --tw-shadow: 0 0 #0000
+    }
+
+    *, :after, :before {
+        --tw-ring-inset: var(--tw-empty, /*!*/ /*!*/);
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: #3b82f680;
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000
+    }</style>
+    <link rel="stylesheet" href="{% static 'styles.7db30c1f099a90d38266.css' %}" media="all"
+          onload="this.media=&#39;all&#39;">
+    <noscript>
+        <link rel="stylesheet" href="styles.7db30c1f099a90d38266.css">
+    </noscript>
+    <style type="text/css"></style>
+    <style>[_nghost-oia-c77] {
+        display: flex;
+        flex: 1 1 auto;
+        width: 100%;
+        height: 100%
+    }</style>
+    <style>layout {
+        display: flex;
+        flex: 1 1 auto;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0
+    }
+
+    layout > * {
+        position: relative;
+        display: flex;
+        flex: 1 1 auto;
+        width: 100%
+    }
+
+    layout router-outlet + * {
+        position: relative;
+        display: flex;
+        flex: 1 1 auto;
+        width: 100%
+    }
+    </style>
+    <style>.mat-button .mat-button-focus-overlay, .mat-icon-button .mat-button-focus-overlay {
+        opacity: 0
+    }
+
+    .mat-button:hover:not(.mat-button-disabled) .mat-button-focus-overlay, .mat-stroked-button:hover:not(.mat-button-disabled) .mat-button-focus-overlay {
+        opacity: .04
+    }
+
+    @media (hover: none) {
+        .mat-button:hover:not(.mat-button-disabled) .mat-button-focus-overlay, .mat-stroked-button:hover:not(.mat-button-disabled) .mat-button-focus-overlay {
+            opacity: 0
+        }
+    }
+
+    .mat-button, .mat-icon-button, .mat-stroked-button, .mat-flat-button {
+        box-sizing: border-box;
+        position: relative;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        -webkit-tap-highlight-color: transparent;
+        display: inline-block;
+        white-space: nowrap;
+        text-decoration: none;
+        vertical-align: baseline;
+        text-align: center;
+        margin: 0;
+        min-width: 64px;
+        line-height: 36px;
+        padding: 0 16px;
+        border-radius: 4px;
+        overflow: visible
+    }
+
+    .mat-button::-moz-focus-inner, .mat-icon-button::-moz-focus-inner, .mat-stroked-button::-moz-focus-inner, .mat-flat-button::-moz-focus-inner {
+        border: 0
+    }
+
+    .mat-button.mat-button-disabled, .mat-icon-button.mat-button-disabled, .mat-stroked-button.mat-button-disabled, .mat-flat-button.mat-button-disabled {
+        cursor: default
+    }
+
+    .mat-button.cdk-keyboard-focused .mat-button-focus-overlay, .mat-button.cdk-program-focused .mat-button-focus-overlay, .mat-icon-button.cdk-keyboard-focused .mat-button-focus-overlay, .mat-icon-button.cdk-program-focused .mat-button-focus-overlay, .mat-stroked-button.cdk-keyboard-focused .mat-button-focus-overlay, .mat-stroked-button.cdk-program-focused .mat-button-focus-overlay, .mat-flat-button.cdk-keyboard-focused .mat-button-focus-overlay, .mat-flat-button.cdk-program-focused .mat-button-focus-overlay {
+        opacity: .12
+    }
+
+    .mat-button::-moz-focus-inner, .mat-icon-button::-moz-focus-inner, .mat-stroked-button::-moz-focus-inner, .mat-flat-button::-moz-focus-inner {
+        border: 0
+    }
+
+    .mat-raised-button {
+        box-sizing: border-box;
+        position: relative;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        -webkit-tap-highlight-color: transparent;
+        display: inline-block;
+        white-space: nowrap;
+        text-decoration: none;
+        vertical-align: baseline;
+        text-align: center;
+        margin: 0;
+        min-width: 64px;
+        line-height: 36px;
+        padding: 0 16px;
+        border-radius: 4px;
+        overflow: visible;
+        transform: translate3d(0, 0, 0);
+        transition: background 400ms cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1)
+    }
+
+    .mat-raised-button::-moz-focus-inner {
+        border: 0
+    }
+
+    .mat-raised-button.mat-button-disabled {
+        cursor: default
+    }
+
+    .mat-raised-button.cdk-keyboard-focused .mat-button-focus-overlay, .mat-raised-button.cdk-program-focused .mat-button-focus-overlay {
+        opacity: .12
+    }
+
+    .mat-raised-button::-moz-focus-inner {
+        border: 0
+    }
+
+    ._mat-animation-noopable.mat-raised-button {
+        transition: none;
+        animation: none
+    }
+
+    .mat-stroked-button {
+        border: 1px solid currentColor;
+        padding: 0 15px;
+        line-height: 34px
+    }
+
+    .mat-stroked-button .mat-button-ripple.mat-ripple, .mat-stroked-button .mat-button-focus-overlay {
+        top: -1px;
+        left: -1px;
+        right: -1px;
+        bottom: -1px
+    }
+
+    .mat-fab {
+        box-sizing: border-box;
+        position: relative;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        -webkit-tap-highlight-color: transparent;
+        display: inline-block;
+        white-space: nowrap;
+        text-decoration: none;
+        vertical-align: baseline;
+        text-align: center;
+        margin: 0;
+        min-width: 64px;
+        line-height: 36px;
+        padding: 0 16px;
+        border-radius: 4px;
+        overflow: visible;
+        transform: translate3d(0, 0, 0);
+        transition: background 400ms cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+        min-width: 0;
+        border-radius: 50%;
+        width: 56px;
+        height: 56px;
+        padding: 0;
+        flex-shrink: 0
+    }
+
+    .mat-fab::-moz-focus-inner {
+        border: 0
+    }
+
+    .mat-fab.mat-button-disabled {
+        cursor: default
+    }
+
+    .mat-fab.cdk-keyboard-focused .mat-button-focus-overlay, .mat-fab.cdk-program-focused .mat-button-focus-overlay {
+        opacity: .12
+    }
+
+    .mat-fab::-moz-focus-inner {
+        border: 0
+    }
+
+    ._mat-animation-noopable.mat-fab {
+        transition: none;
+        animation: none
+    }
+
+    .mat-fab .mat-button-wrapper {
+        padding: 16px 0;
+        display: inline-block;
+        line-height: 24px
+    }
+
+    .mat-mini-fab {
+        box-sizing: border-box;
+        position: relative;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        -webkit-tap-highlight-color: transparent;
+        display: inline-block;
+        white-space: nowrap;
+        text-decoration: none;
+        vertical-align: baseline;
+        text-align: center;
+        margin: 0;
+        min-width: 64px;
+        line-height: 36px;
+        padding: 0 16px;
+        border-radius: 4px;
+        overflow: visible;
+        transform: translate3d(0, 0, 0);
+        transition: background 400ms cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+        min-width: 0;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        flex-shrink: 0
+    }
+
+    .mat-mini-fab::-moz-focus-inner {
+        border: 0
+    }
+
+    .mat-mini-fab.mat-button-disabled {
+        cursor: default
+    }
+
+    .mat-mini-fab.cdk-keyboard-focused .mat-button-focus-overlay, .mat-mini-fab.cdk-program-focused .mat-button-focus-overlay {
+        opacity: .12
+    }
+
+    .mat-mini-fab::-moz-focus-inner {
+        border: 0
+    }
+
+    ._mat-animation-noopable.mat-mini-fab {
+        transition: none;
+        animation: none
+    }
+
+    .mat-mini-fab .mat-button-wrapper {
+        padding: 8px 0;
+        display: inline-block;
+        line-height: 24px
+    }
+
+    .mat-icon-button {
+        padding: 0;
+        min-width: 0;
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+        line-height: 40px;
+        border-radius: 50%
+    }
+
+    .mat-icon-button i, .mat-icon-button .mat-icon {
+        line-height: 24px
+    }
+
+    .mat-button-ripple.mat-ripple, .mat-button-focus-overlay {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        pointer-events: none;
+        border-radius: inherit
+    }
+
+    .mat-button-ripple.mat-ripple:not(:empty) {
+        transform: translateZ(0)
+    }
+
+    .mat-button-focus-overlay {
+        opacity: 0;
+        transition: opacity 200ms cubic-bezier(0.35, 0, 0.25, 1), background-color 200ms cubic-bezier(0.35, 0, 0.25, 1)
+    }
+
+    ._mat-animation-noopable .mat-button-focus-overlay {
+        transition: none
+    }
+
+    .mat-button-ripple-round {
+        border-radius: 50%;
+        z-index: 1
+    }
+
+    .mat-button .mat-button-wrapper > *, .mat-flat-button .mat-button-wrapper > *, .mat-stroked-button .mat-button-wrapper > *, .mat-raised-button .mat-button-wrapper > *, .mat-icon-button .mat-button-wrapper > *, .mat-fab .mat-button-wrapper > *, .mat-mini-fab .mat-button-wrapper > * {
+        vertical-align: middle
+    }
+
+    .mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon-button, .mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon-button {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: inherit;
+        width: 2.5em;
+        height: 2.5em
+    }
+
+    .cdk-high-contrast-active .mat-button, .cdk-high-contrast-active .mat-flat-button, .cdk-high-contrast-active .mat-raised-button, .cdk-high-contrast-active .mat-icon-button, .cdk-high-contrast-active .mat-fab, .cdk-high-contrast-active .mat-mini-fab {
+        outline: solid 1px
+    }
+
+    .cdk-high-contrast-active .mat-button-base.cdk-keyboard-focused, .cdk-high-contrast-active .mat-button-base.cdk-program-focused {
+        outline: solid 3px
+    }
+    </style>
+    <style>.mat-icon {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-repeat: no-repeat;
+        display: inline-block;
+        fill: currentColor;
+        height: 24px;
+        width: 24px
+    }
+
+    .mat-icon.mat-icon-inline {
+        font-size: inherit;
+        height: inherit;
+        line-height: inherit;
+        width: inherit
+    }
+
+    [dir=rtl] .mat-icon-rtl-mirror {
+        transform: scale(-1, 1)
+    }
+
+    .mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon, .mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon {
+        display: block
+    }
+
+    .mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon-button .mat-icon, .mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon-button .mat-icon {
+        margin: auto
+    }
+    </style>
+    <style></style>
+    <style>.mat-drawer-container {
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+        -webkit-overflow-scrolling: touch;
+        display: block;
+        overflow: hidden
+    }
+
+    .mat-drawer-container[fullscreen] {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute
+    }
+
+    .mat-drawer-container[fullscreen].mat-drawer-container-has-open {
+        overflow: hidden
+    }
+
+    .mat-drawer-container.mat-drawer-container-explicit-backdrop .mat-drawer-side {
+        z-index: 3
+    }
+
+    .mat-drawer-container.ng-animate-disabled .mat-drawer-backdrop, .mat-drawer-container.ng-animate-disabled .mat-drawer-content, .ng-animate-disabled .mat-drawer-container .mat-drawer-backdrop, .ng-animate-disabled .mat-drawer-container .mat-drawer-content {
+        transition: none
+    }
+
+    .mat-drawer-backdrop {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        display: block;
+        z-index: 3;
+        visibility: hidden
+    }
+
+    .mat-drawer-backdrop.mat-drawer-shown {
+        visibility: visible
+    }
+
+    .mat-drawer-transition .mat-drawer-backdrop {
+        transition-duration: 400ms;
+        transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+        transition-property: background-color, visibility
+    }
+
+    .cdk-high-contrast-active .mat-drawer-backdrop {
+        opacity: .5
+    }
+
+    .mat-drawer-content {
+        position: relative;
+        z-index: 1;
+        display: block;
+        height: 100%;
+        overflow: auto
+    }
+
+    .mat-drawer-transition .mat-drawer-content {
+        transition-duration: 400ms;
+        transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+        transition-property: transform, margin-left, margin-right
+    }
+
+    .mat-drawer {
+        position: relative;
+        z-index: 4;
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 3;
+        outline: 0;
+        box-sizing: border-box;
+        overflow-y: auto;
+        transform: translate3d(-100%, 0, 0)
+    }
+
+    .cdk-high-contrast-active .mat-drawer, .cdk-high-contrast-active [dir=rtl] .mat-drawer.mat-drawer-end {
+        border-right: solid 1px currentColor
+    }
+
+    .cdk-high-contrast-active [dir=rtl] .mat-drawer, .cdk-high-contrast-active .mat-drawer.mat-drawer-end {
+        border-left: solid 1px currentColor;
+        border-right: none
+    }
+
+    .mat-drawer.mat-drawer-side {
+        z-index: 2
+    }
+
+    .mat-drawer.mat-drawer-end {
+        right: 0;
+        transform: translate3d(100%, 0, 0)
+    }
+
+    [dir=rtl] .mat-drawer {
+        transform: translate3d(100%, 0, 0)
+    }
+
+    [dir=rtl] .mat-drawer.mat-drawer-end {
+        left: 0;
+        right: auto;
+        transform: translate3d(-100%, 0, 0)
+    }
+
+    .mat-drawer-inner-container {
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch
+    }
+
+    .mat-sidenav-fixed {
+        position: fixed
+    }
+    </style>
+    <style>/*!
  * Cropper.js v1.5.12
  * https://fengyuanchen.github.io/cropperjs
  *
@@ -79,120 +1081,959 @@
  * Released under the MIT license
  *
  * Date: 2021-06-12T08:00:11.623Z
- */.cropper-container{direction:ltr;font-size:0;line-height:0;position:relative;touch-action:none;-webkit-user-select:none;user-select:none}.cropper-container img{image-orientation:0deg;display:block;height:100%;max-height:none!important;max-width:none!important;min-height:0!important;min-width:0!important;width:100%}.cropper-canvas,.cropper-crop-box,.cropper-drag-box,.cropper-modal,.cropper-wrap-box{bottom:0;left:0;position:absolute;right:0;top:0}.cropper-canvas,.cropper-wrap-box{overflow:hidden}.cropper-drag-box{background-color:#fff;opacity:0}.cropper-modal{background-color:#000;opacity:.5}.cropper-view-box{display:block;height:100%;outline:1px solid #39f;outline-color:rgba(51,153,255,.75);overflow:hidden;width:100%}.cropper-dashed{border:0 dashed #eee;display:block;opacity:.5;position:absolute}.cropper-dashed.dashed-h{border-bottom-width:1px;border-top-width:1px;height:33.33333%;left:0;top:33.33333%;width:100%}.cropper-dashed.dashed-v{border-left-width:1px;border-right-width:1px;height:100%;left:33.33333%;top:0;width:33.33333%}.cropper-center{display:block;height:0;left:50%;opacity:.75;position:absolute;top:50%;width:0}.cropper-center:after,.cropper-center:before{background-color:#eee;content:" ";display:block;position:absolute}.cropper-center:before{height:1px;left:-3px;top:0;width:7px}.cropper-center:after{height:7px;left:0;top:-3px;width:1px}.cropper-face,.cropper-line,.cropper-point{display:block;height:100%;opacity:.1;position:absolute;width:100%}.cropper-face{background-color:#fff;left:0;top:0}.cropper-line{background-color:#39f}.cropper-line.line-e{cursor:ew-resize;right:-3px;top:0;width:5px}.cropper-line.line-n{cursor:ns-resize;height:5px;left:0;top:-3px}.cropper-line.line-w{cursor:ew-resize;left:-3px;top:0;width:5px}.cropper-line.line-s{bottom:-3px;cursor:ns-resize;height:5px;left:0}.cropper-point{background-color:#39f;height:5px;opacity:.75;width:5px}.cropper-point.point-e{cursor:ew-resize;margin-top:-3px;right:-3px;top:50%}.cropper-point.point-n{cursor:ns-resize;left:50%;margin-left:-3px;top:-3px}.cropper-point.point-w{cursor:ew-resize;left:-3px;margin-top:-3px;top:50%}.cropper-point.point-s{bottom:-3px;cursor:s-resize;left:50%;margin-left:-3px}.cropper-point.point-ne{cursor:nesw-resize;right:-3px;top:-3px}.cropper-point.point-nw{cursor:nwse-resize;left:-3px;top:-3px}.cropper-point.point-sw{bottom:-3px;cursor:nesw-resize;left:-3px}.cropper-point.point-se{bottom:-3px;cursor:nwse-resize;height:20px;opacity:1;right:-3px;width:20px}@media (min-width:768px){.cropper-point.point-se{height:15px;width:15px}}@media (min-width:992px){.cropper-point.point-se{height:10px;width:10px}}@media (min-width:1200px){.cropper-point.point-se{height:5px;opacity:.75;width:5px}}.cropper-point.point-se:before{background-color:#39f;bottom:-50%;content:" ";display:block;height:200%;opacity:0;position:absolute;right:-50%;width:200%}.cropper-invisible{opacity:0}.cropper-bg{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAAA3NCSVQICAjb4U/gAAAABlBMVEXMzMz////TjRV2AAAACXBIWXMAAArrAAAK6wGCiw1aAAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M26LyyjAAAABFJREFUCJlj+M/AgBVhF/0PAH6/D/HkDxOGAAAAAElFTkSuQmCC")}.cropper-hide{display:block;height:0;position:absolute;width:0}.cropper-hidden{display:none!important}.cropper-move{cursor:move}.cropper-crop{cursor:crosshair}.cropper-disabled .cropper-drag-box,.cropper-disabled .cropper-face,.cropper-disabled .cropper-line,.cropper-disabled .cropper-point{cursor:not-allowed}</style><style>.ng2-pdf-viewer-container[_ngcontent-oia-c91]{overflow-x:auto;position:relative;height:100%}[_nghost-oia-c91]     .textLayer{position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;opacity:.2;line-height:1}[_nghost-oia-c91]     .textLayer>span{color:transparent;position:absolute;white-space:pre;cursor:text;transform-origin:0 0}[_nghost-oia-c91]     .textLayer .highlight{margin:-1px;padding:1px;background-color:#b400aa;border-radius:4px}[_nghost-oia-c91]     .textLayer .highlight.begin{border-radius:4px 0 0 4px}[_nghost-oia-c91]     .textLayer .highlight.end{border-radius:0 4px 4px 0}[_nghost-oia-c91]     .textLayer .highlight.middle{border-radius:0}[_nghost-oia-c91]     .textLayer .highlight.selected{background-color:#006400}[_nghost-oia-c91]     .textLayer ::-moz-selection, [_nghost-oia-c91]     .textLayer ::selection{background:#00f}[_nghost-oia-c91]     .textLayer .endOfContent{display:block;position:absolute;left:0;top:100%;right:0;bottom:0;z-index:-1;cursor:default;-webkit-user-select:none;user-select:none}[_nghost-oia-c91]     .textLayer .endOfContent.active{top:0}[_nghost-oia-c91]     .textLayer .page{display:none}[_nghost-oia-c91]     .annotationLayer section{position:absolute}[_nghost-oia-c91]     .annotationLayer .buttonWidgetAnnotation.pushButton>a, [_nghost-oia-c91]     .annotationLayer .linkAnnotation>a{position:absolute;font-size:1em;top:0;left:0;width:100%;height:100%}[_nghost-oia-c91]     .annotationLayer .buttonWidgetAnnotation.pushButton>a:hover, [_nghost-oia-c91]     .annotationLayer .linkAnnotation>a:hover{opacity:.2;background:#ff0;box-shadow:0 2px 10px #ff0}[_nghost-oia-c91]     .annotationLayer .textAnnotation img{position:absolute;cursor:pointer}[_nghost-oia-c91]     .annotationLayer .buttonWidgetAnnotation.checkBox input, [_nghost-oia-c91]     .annotationLayer .buttonWidgetAnnotation.radioButton input, [_nghost-oia-c91]     .annotationLayer .choiceWidgetAnnotation select, [_nghost-oia-c91]     .annotationLayer .textWidgetAnnotation input, [_nghost-oia-c91]     .annotationLayer .textWidgetAnnotation textarea{background-color:rgba(0,54,255,.13);border:1px solid transparent;box-sizing:border-box;font-size:9px;height:100%;margin:0;padding:0 3px;vertical-align:top;width:100%}[_nghost-oia-c91]     .annotationLayer .choiceWidgetAnnotation select option{padding:0}[_nghost-oia-c91]     .annotationLayer .buttonWidgetAnnotation.radioButton input{border-radius:50%}[_nghost-oia-c91]     .annotationLayer .textWidgetAnnotation textarea{font:message-box;font-size:9px;resize:none}[_nghost-oia-c91]     .annotationLayer .buttonWidgetAnnotation.checkBox input[disabled], [_nghost-oia-c91]     .annotationLayer .buttonWidgetAnnotation.radioButton input[disabled], [_nghost-oia-c91]     .annotationLayer .choiceWidgetAnnotation select[disabled], [_nghost-oia-c91]     .annotationLayer .textWidgetAnnotation input[disabled], [_nghost-oia-c91]     .annotationLayer .textWidgetAnnotation textarea[disabled]{background:none;border:1px solid transparent;cursor:not-allowed}[_nghost-oia-c91]     .annotationLayer .buttonWidgetAnnotation.checkBox input:hover, [_nghost-oia-c91]     .annotationLayer .buttonWidgetAnnotation.radioButton input:hover, [_nghost-oia-c91]     .annotationLayer .choiceWidgetAnnotation select:hover, [_nghost-oia-c91]     .annotationLayer .textWidgetAnnotation input:hover, [_nghost-oia-c91]     .annotationLayer .textWidgetAnnotation textarea:hover{border:1px solid #000}[_nghost-oia-c91]     .annotationLayer .choiceWidgetAnnotation select:focus, [_nghost-oia-c91]     .annotationLayer .textWidgetAnnotation input:focus, [_nghost-oia-c91]     .annotationLayer .textWidgetAnnotation textarea:focus{background:none;border:1px solid transparent}[_nghost-oia-c91]     .annotationLayer .buttonWidgetAnnotation.checkBox input:checked:after, [_nghost-oia-c91]     .annotationLayer .buttonWidgetAnnotation.checkBox input:checked:before, [_nghost-oia-c91]     .annotationLayer .buttonWidgetAnnotation.radioButton input:checked:before{background-color:#000;content:"";display:block;position:absolute}[_nghost-oia-c91]     .annotationLayer .buttonWidgetAnnotation.checkBox input:checked:after, [_nghost-oia-c91]     .annotationLayer .buttonWidgetAnnotation.checkBox input:checked:before{height:80%;left:45%;width:1px}[_nghost-oia-c91]     .annotationLayer .buttonWidgetAnnotation.checkBox input:checked:before{transform:rotate(45deg)}[_nghost-oia-c91]     .annotationLayer .buttonWidgetAnnotation.checkBox input:checked:after{transform:rotate(-45deg)}[_nghost-oia-c91]     .annotationLayer .buttonWidgetAnnotation.radioButton input:checked:before{border-radius:50%;height:50%;left:30%;top:20%;width:50%}[_nghost-oia-c91]     .annotationLayer .textWidgetAnnotation input.comb{font-family:monospace;padding-left:2px;padding-right:0}[_nghost-oia-c91]     .annotationLayer .textWidgetAnnotation input.comb:focus{width:115%}[_nghost-oia-c91]     .annotationLayer .buttonWidgetAnnotation.checkBox input, [_nghost-oia-c91]     .annotationLayer .buttonWidgetAnnotation.radioButton input{-webkit-appearance:none;appearance:none;padding:0}[_nghost-oia-c91]     .annotationLayer .popupWrapper{position:absolute;width:20em}[_nghost-oia-c91]     .annotationLayer .popup{position:absolute;z-index:200;max-width:20em;background-color:#ff9;box-shadow:0 2px 5px #333;border-radius:2px;padding:.6em;margin-left:5px;cursor:pointer;font:message-box;word-wrap:break-word}[_nghost-oia-c91]     .annotationLayer .popup h1{font-size:1em;border-bottom:1px solid #000;margin:0;padding-bottom:.2em}[_nghost-oia-c91]     .annotationLayer .popup p{margin:0;padding-top:.2em}[_nghost-oia-c91]     .annotationLayer .circleAnnotation svg ellipse, [_nghost-oia-c91]     .annotationLayer .fileAttachmentAnnotation, [_nghost-oia-c91]     .annotationLayer .highlightAnnotation, [_nghost-oia-c91]     .annotationLayer .inkAnnotation svg polyline, [_nghost-oia-c91]     .annotationLayer .lineAnnotation svg line, [_nghost-oia-c91]     .annotationLayer .polygonAnnotation svg polygon, [_nghost-oia-c91]     .annotationLayer .polylineAnnotation svg polyline, [_nghost-oia-c91]     .annotationLayer .squareAnnotation svg rect, [_nghost-oia-c91]     .annotationLayer .squigglyAnnotation, [_nghost-oia-c91]     .annotationLayer .stampAnnotation, [_nghost-oia-c91]     .annotationLayer .strikeoutAnnotation, [_nghost-oia-c91]     .annotationLayer .underlineAnnotation{cursor:pointer}[_nghost-oia-c91]     .pdfViewer{padding-bottom:10px}[_nghost-oia-c91]     .pdfViewer .canvasWrapper{overflow:hidden}[_nghost-oia-c91]     .pdfViewer .page{direction:ltr;width:816px;height:1056px;position:relative;overflow:visible;border:9px solid rgba(0,0,0,.01);background-clip:content-box;border-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAQAAADYWf5HAAAA6UlEQVR4Xl2Pi2rEMAwE16fm1f7/r14v7w4rI0IzLAF7hLxNevBSEMEF5+OilNCsRd8ZMyn+a4NmsOT8WJw1lFbSYgGFzF2bLFoLjTClWjKKGRWpDYAGXUnZ4uhbBUzF3Oe/GG/ue2fn4GgsyXhNgysV2JnrhKEMg4fEZcALmiKbNhBBRFpSyDOj1G4QOVly6O1FV54ZZq8OVygrciDt6JazRgi1ljTPH0gbrPmHPXAbCiDd4GawIjip1TPh9tt2sz24qaCjr/jAb/GBFTbq9KZ7Ke/Cqt8nayUikZKsWZK7Fe6bg5dOUt8fZHWG2BHc+6EAAAAASUVORK5CYII=") 9 9 repeat;background-color:#fff;box-shadow:0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23);margin:0 25px 25px}[_nghost-oia-c91]     .pdfViewer.removePageBorders .page{margin:24px auto;border:none;box-shadow:0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23)}[_nghost-oia-c91]     .pdfViewer.removePageBorders{padding-bottom:0}[_nghost-oia-c91]     .pdfViewer.singlePageView{display:inline-block}[_nghost-oia-c91]     .pdfViewer.singlePageView .page{margin:0;border:none}[_nghost-oia-c91]     .pdfViewer.scrollHorizontal, [_nghost-oia-c91]     .pdfViewer.scrollWrapped, [_nghost-oia-c91]     .spread{margin-left:3.5px;margin-right:3.5px;text-align:center}[_nghost-oia-c91]     .pdfViewer.scrollHorizontal, [_nghost-oia-c91]     .spread{white-space:nowrap}[_nghost-oia-c91]     .pdfViewer.removePageBorders, [_nghost-oia-c91]     .pdfViewer.scrollHorizontal .spread, [_nghost-oia-c91]     .pdfViewer.scrollWrapped .spread{margin-left:0;margin-right:0}[_nghost-oia-c91]     .pdfViewer.scrollHorizontal .page, [_nghost-oia-c91]     .pdfViewer.scrollHorizontal .spread, [_nghost-oia-c91]     .pdfViewer.scrollWrapped .page, [_nghost-oia-c91]     .pdfViewer.scrollWrapped .spread, [_nghost-oia-c91]     .spread .page{display:inline-block;vertical-align:middle}[_nghost-oia-c91]     .pdfViewer.scrollHorizontal .page, [_nghost-oia-c91]     .pdfViewer.scrollWrapped .page, [_nghost-oia-c91]     .spread .page{margin-left:-3.5px;margin-right:-3.5px}[_nghost-oia-c91]     .pdfViewer.removePageBorders.scrollHorizontal .page, [_nghost-oia-c91]     .pdfViewer.removePageBorders.scrollWrapped .page, [_nghost-oia-c91]     .pdfViewer.removePageBorders .spread .page{margin-left:5px;margin-right:5px}[_nghost-oia-c91]     .pdfViewer .page canvas{margin:0;display:block}[_nghost-oia-c91]     .pdfViewer .page canvas[hidden]{display:none}[_nghost-oia-c91]     .pdfViewer .page .loadingIcon{position:absolute;display:block;left:0;top:0;right:0;bottom:0;background:url("data:image/gif;base64,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") 50% no-repeat}[_nghost-oia-c91]     .pdfPresentationMode .pdfViewer{margin-left:0;margin-right:0}[_nghost-oia-c91]     .pdfPresentationMode .pdfViewer .page, [_nghost-oia-c91]     .pdfPresentationMode .pdfViewer .spread{display:block}[_nghost-oia-c91]     .pdfPresentationMode .pdfViewer .page, [_nghost-oia-c91]     .pdfPresentationMode .pdfViewer.removePageBorders .page{margin-left:auto;margin-right:auto}[_nghost-oia-c91]     .pdfPresentationMode:-moz-full-screen .pdfViewer .page, [_nghost-oia-c91]     .pdfPresentationMode:-webkit-full-screen .pdfViewer .page, [_nghost-oia-c91]     .pdfPresentationMode:fullscreen .pdfViewer .page{margin-bottom:100%;border:0}</style></head>
+ */
+    .cropper-container {
+        direction: ltr;
+        font-size: 0;
+        line-height: 0;
+        position: relative;
+        touch-action: none;
+        -webkit-user-select: none;
+        user-select: none
+    }
 
-    <body class="fuse-splash-screen-hidden light theme-default">
+    .cropper-container img {
+        image-orientation: 0deg;
+        display: block;
+        height: 100%;
+        max-height: none !important;
+        max-width: none !important;
+        min-height: 0 !important;
+        min-width: 0 !important;
+        width: 100%
+    }
 
-        <!-- Splash screen -->
-        <fuse-splash-screen>
-            <img src="{% static 'Emblem_of_Uzbekistan.svg' %}" alt="Fuse logo">
-            <div class="spinner">
-                <div class="bounce1"></div>
-                <div class="bounce2"></div>
-                <div class="bounce3"></div>
+    .cropper-canvas, .cropper-crop-box, .cropper-drag-box, .cropper-modal, .cropper-wrap-box {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0
+    }
+
+    .cropper-canvas, .cropper-wrap-box {
+        overflow: hidden
+    }
+
+    .cropper-drag-box {
+        background-color: #fff;
+        opacity: 0
+    }
+
+    .cropper-modal {
+        background-color: #000;
+        opacity: .5
+    }
+
+    .cropper-view-box {
+        display: block;
+        height: 100%;
+        outline: 1px solid #39f;
+        outline-color: rgba(51, 153, 255, .75);
+        overflow: hidden;
+        width: 100%
+    }
+
+    .cropper-dashed {
+        border: 0 dashed #eee;
+        display: block;
+        opacity: .5;
+        position: absolute
+    }
+
+    .cropper-dashed.dashed-h {
+        border-bottom-width: 1px;
+        border-top-width: 1px;
+        height: 33.33333%;
+        left: 0;
+        top: 33.33333%;
+        width: 100%
+    }
+
+    .cropper-dashed.dashed-v {
+        border-left-width: 1px;
+        border-right-width: 1px;
+        height: 100%;
+        left: 33.33333%;
+        top: 0;
+        width: 33.33333%
+    }
+
+    .cropper-center {
+        display: block;
+        height: 0;
+        left: 50%;
+        opacity: .75;
+        position: absolute;
+        top: 50%;
+        width: 0
+    }
+
+    .cropper-center:after, .cropper-center:before {
+        background-color: #eee;
+        content: " ";
+        display: block;
+        position: absolute
+    }
+
+    .cropper-center:before {
+        height: 1px;
+        left: -3px;
+        top: 0;
+        width: 7px
+    }
+
+    .cropper-center:after {
+        height: 7px;
+        left: 0;
+        top: -3px;
+        width: 1px
+    }
+
+    .cropper-face, .cropper-line, .cropper-point {
+        display: block;
+        height: 100%;
+        opacity: .1;
+        position: absolute;
+        width: 100%
+    }
+
+    .cropper-face {
+        background-color: #fff;
+        left: 0;
+        top: 0
+    }
+
+    .cropper-line {
+        background-color: #39f
+    }
+
+    .cropper-line.line-e {
+        cursor: ew-resize;
+        right: -3px;
+        top: 0;
+        width: 5px
+    }
+
+    .cropper-line.line-n {
+        cursor: ns-resize;
+        height: 5px;
+        left: 0;
+        top: -3px
+    }
+
+    .cropper-line.line-w {
+        cursor: ew-resize;
+        left: -3px;
+        top: 0;
+        width: 5px
+    }
+
+    .cropper-line.line-s {
+        bottom: -3px;
+        cursor: ns-resize;
+        height: 5px;
+        left: 0
+    }
+
+    .cropper-point {
+        background-color: #39f;
+        height: 5px;
+        opacity: .75;
+        width: 5px
+    }
+
+    .cropper-point.point-e {
+        cursor: ew-resize;
+        margin-top: -3px;
+        right: -3px;
+        top: 50%
+    }
+
+    .cropper-point.point-n {
+        cursor: ns-resize;
+        left: 50%;
+        margin-left: -3px;
+        top: -3px
+    }
+
+    .cropper-point.point-w {
+        cursor: ew-resize;
+        left: -3px;
+        margin-top: -3px;
+        top: 50%
+    }
+
+    .cropper-point.point-s {
+        bottom: -3px;
+        cursor: s-resize;
+        left: 50%;
+        margin-left: -3px
+    }
+
+    .cropper-point.point-ne {
+        cursor: nesw-resize;
+        right: -3px;
+        top: -3px
+    }
+
+    .cropper-point.point-nw {
+        cursor: nwse-resize;
+        left: -3px;
+        top: -3px
+    }
+
+    .cropper-point.point-sw {
+        bottom: -3px;
+        cursor: nesw-resize;
+        left: -3px
+    }
+
+    .cropper-point.point-se {
+        bottom: -3px;
+        cursor: nwse-resize;
+        height: 20px;
+        opacity: 1;
+        right: -3px;
+        width: 20px
+    }
+
+    @media (min-width: 768px) {
+        .cropper-point.point-se {
+            height: 15px;
+            width: 15px
+        }
+    }
+
+    @media (min-width: 992px) {
+        .cropper-point.point-se {
+            height: 10px;
+            width: 10px
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .cropper-point.point-se {
+            height: 5px;
+            opacity: .75;
+            width: 5px
+        }
+    }
+
+    .cropper-point.point-se:before {
+        background-color: #39f;
+        bottom: -50%;
+        content: " ";
+        display: block;
+        height: 200%;
+        opacity: 0;
+        position: absolute;
+        right: -50%;
+        width: 200%
+    }
+
+    .cropper-invisible {
+        opacity: 0
+    }
+
+    .cropper-bg {
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAAA3NCSVQICAjb4U/gAAAABlBMVEXMzMz////TjRV2AAAACXBIWXMAAArrAAAK6wGCiw1aAAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M26LyyjAAAABFJREFUCJlj+M/AgBVhF/0PAH6/D/HkDxOGAAAAAElFTkSuQmCC")
+    }
+
+    .cropper-hide {
+        display: block;
+        height: 0;
+        position: absolute;
+        width: 0
+    }
+
+    .cropper-hidden {
+        display: none !important
+    }
+
+    .cropper-move {
+        cursor: move
+    }
+
+    .cropper-crop {
+        cursor: crosshair
+    }
+
+    .cropper-disabled .cropper-drag-box, .cropper-disabled .cropper-face, .cropper-disabled .cropper-line, .cropper-disabled .cropper-point {
+        cursor: not-allowed
+    }</style>
+    <style>.ng2-pdf-viewer-container[_ngcontent-oia-c91] {
+        overflow-x: auto;
+        position: relative;
+        height: 100%
+    }
+
+    [_nghost-oia-c91] .textLayer {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        opacity: .2;
+        line-height: 1
+    }
+
+    [_nghost-oia-c91] .textLayer > span {
+        color: transparent;
+        position: absolute;
+        white-space: pre;
+        cursor: text;
+        transform-origin: 0 0
+    }
+
+    [_nghost-oia-c91] .textLayer .highlight {
+        margin: -1px;
+        padding: 1px;
+        background-color: #b400aa;
+        border-radius: 4px
+    }
+
+    [_nghost-oia-c91] .textLayer .highlight.begin {
+        border-radius: 4px 0 0 4px
+    }
+
+    [_nghost-oia-c91] .textLayer .highlight.end {
+        border-radius: 0 4px 4px 0
+    }
+
+    [_nghost-oia-c91] .textLayer .highlight.middle {
+        border-radius: 0
+    }
+
+    [_nghost-oia-c91] .textLayer .highlight.selected {
+        background-color: #006400
+    }
+
+    [_nghost-oia-c91] .textLayer ::-moz-selection, [_nghost-oia-c91] .textLayer ::selection {
+        background: #00f
+    }
+
+    [_nghost-oia-c91] .textLayer .endOfContent {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        cursor: default;
+        -webkit-user-select: none;
+        user-select: none
+    }
+
+    [_nghost-oia-c91] .textLayer .endOfContent.active {
+        top: 0
+    }
+
+    [_nghost-oia-c91] .textLayer .page {
+        display: none
+    }
+
+    [_nghost-oia-c91] .annotationLayer section {
+        position: absolute
+    }
+
+    [_nghost-oia-c91] .annotationLayer .buttonWidgetAnnotation.pushButton > a, [_nghost-oia-c91] .annotationLayer .linkAnnotation > a {
+        position: absolute;
+        font-size: 1em;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%
+    }
+
+    [_nghost-oia-c91] .annotationLayer .buttonWidgetAnnotation.pushButton > a:hover, [_nghost-oia-c91] .annotationLayer .linkAnnotation > a:hover {
+        opacity: .2;
+        background: #ff0;
+        box-shadow: 0 2px 10px #ff0
+    }
+
+    [_nghost-oia-c91] .annotationLayer .textAnnotation img {
+        position: absolute;
+        cursor: pointer
+    }
+
+    [_nghost-oia-c91] .annotationLayer .buttonWidgetAnnotation.checkBox input, [_nghost-oia-c91] .annotationLayer .buttonWidgetAnnotation.radioButton input, [_nghost-oia-c91] .annotationLayer .choiceWidgetAnnotation select, [_nghost-oia-c91] .annotationLayer .textWidgetAnnotation input, [_nghost-oia-c91] .annotationLayer .textWidgetAnnotation textarea {
+        background-color: rgba(0, 54, 255, .13);
+        border: 1px solid transparent;
+        box-sizing: border-box;
+        font-size: 9px;
+        height: 100%;
+        margin: 0;
+        padding: 0 3px;
+        vertical-align: top;
+        width: 100%
+    }
+
+    [_nghost-oia-c91] .annotationLayer .choiceWidgetAnnotation select option {
+        padding: 0
+    }
+
+    [_nghost-oia-c91] .annotationLayer .buttonWidgetAnnotation.radioButton input {
+        border-radius: 50%
+    }
+
+    [_nghost-oia-c91] .annotationLayer .textWidgetAnnotation textarea {
+        font: message-box;
+        font-size: 9px;
+        resize: none
+    }
+
+    [_nghost-oia-c91] .annotationLayer .buttonWidgetAnnotation.checkBox input[disabled], [_nghost-oia-c91] .annotationLayer .buttonWidgetAnnotation.radioButton input[disabled], [_nghost-oia-c91] .annotationLayer .choiceWidgetAnnotation select[disabled], [_nghost-oia-c91] .annotationLayer .textWidgetAnnotation input[disabled], [_nghost-oia-c91] .annotationLayer .textWidgetAnnotation textarea[disabled] {
+        background: none;
+        border: 1px solid transparent;
+        cursor: not-allowed
+    }
+
+    [_nghost-oia-c91] .annotationLayer .buttonWidgetAnnotation.checkBox input:hover, [_nghost-oia-c91] .annotationLayer .buttonWidgetAnnotation.radioButton input:hover, [_nghost-oia-c91] .annotationLayer .choiceWidgetAnnotation select:hover, [_nghost-oia-c91] .annotationLayer .textWidgetAnnotation input:hover, [_nghost-oia-c91] .annotationLayer .textWidgetAnnotation textarea:hover {
+        border: 1px solid #000
+    }
+
+    [_nghost-oia-c91] .annotationLayer .choiceWidgetAnnotation select:focus, [_nghost-oia-c91] .annotationLayer .textWidgetAnnotation input:focus, [_nghost-oia-c91] .annotationLayer .textWidgetAnnotation textarea:focus {
+        background: none;
+        border: 1px solid transparent
+    }
+
+    [_nghost-oia-c91] .annotationLayer .buttonWidgetAnnotation.checkBox input:checked:after, [_nghost-oia-c91] .annotationLayer .buttonWidgetAnnotation.checkBox input:checked:before, [_nghost-oia-c91] .annotationLayer .buttonWidgetAnnotation.radioButton input:checked:before {
+        background-color: #000;
+        content: "";
+        display: block;
+        position: absolute
+    }
+
+    [_nghost-oia-c91] .annotationLayer .buttonWidgetAnnotation.checkBox input:checked:after, [_nghost-oia-c91] .annotationLayer .buttonWidgetAnnotation.checkBox input:checked:before {
+        height: 80%;
+        left: 45%;
+        width: 1px
+    }
+
+    [_nghost-oia-c91] .annotationLayer .buttonWidgetAnnotation.checkBox input:checked:before {
+        transform: rotate(45deg)
+    }
+
+    [_nghost-oia-c91] .annotationLayer .buttonWidgetAnnotation.checkBox input:checked:after {
+        transform: rotate(-45deg)
+    }
+
+    [_nghost-oia-c91] .annotationLayer .buttonWidgetAnnotation.radioButton input:checked:before {
+        border-radius: 50%;
+        height: 50%;
+        left: 30%;
+        top: 20%;
+        width: 50%
+    }
+
+    [_nghost-oia-c91] .annotationLayer .textWidgetAnnotation input.comb {
+        font-family: monospace;
+        padding-left: 2px;
+        padding-right: 0
+    }
+
+    [_nghost-oia-c91] .annotationLayer .textWidgetAnnotation input.comb:focus {
+        width: 115%
+    }
+
+    [_nghost-oia-c91] .annotationLayer .buttonWidgetAnnotation.checkBox input, [_nghost-oia-c91] .annotationLayer .buttonWidgetAnnotation.radioButton input {
+        -webkit-appearance: none;
+        appearance: none;
+        padding: 0
+    }
+
+    [_nghost-oia-c91] .annotationLayer .popupWrapper {
+        position: absolute;
+        width: 20em
+    }
+
+    [_nghost-oia-c91] .annotationLayer .popup {
+        position: absolute;
+        z-index: 200;
+        max-width: 20em;
+        background-color: #ff9;
+        box-shadow: 0 2px 5px #333;
+        border-radius: 2px;
+        padding: .6em;
+        margin-left: 5px;
+        cursor: pointer;
+        font: message-box;
+        word-wrap: break-word
+    }
+
+    [_nghost-oia-c91] .annotationLayer .popup h1 {
+        font-size: 1em;
+        border-bottom: 1px solid #000;
+        margin: 0;
+        padding-bottom: .2em
+    }
+
+    [_nghost-oia-c91] .annotationLayer .popup p {
+        margin: 0;
+        padding-top: .2em
+    }
+
+    [_nghost-oia-c91] .annotationLayer .circleAnnotation svg ellipse, [_nghost-oia-c91] .annotationLayer .fileAttachmentAnnotation, [_nghost-oia-c91] .annotationLayer .highlightAnnotation, [_nghost-oia-c91] .annotationLayer .inkAnnotation svg polyline, [_nghost-oia-c91] .annotationLayer .lineAnnotation svg line, [_nghost-oia-c91] .annotationLayer .polygonAnnotation svg polygon, [_nghost-oia-c91] .annotationLayer .polylineAnnotation svg polyline, [_nghost-oia-c91] .annotationLayer .squareAnnotation svg rect, [_nghost-oia-c91] .annotationLayer .squigglyAnnotation, [_nghost-oia-c91] .annotationLayer .stampAnnotation, [_nghost-oia-c91] .annotationLayer .strikeoutAnnotation, [_nghost-oia-c91] .annotationLayer .underlineAnnotation {
+        cursor: pointer
+    }
+
+    [_nghost-oia-c91] .pdfViewer {
+        padding-bottom: 10px
+    }
+
+    [_nghost-oia-c91] .pdfViewer .canvasWrapper {
+        overflow: hidden
+    }
+
+    [_nghost-oia-c91] .pdfViewer .page {
+        direction: ltr;
+        width: 816px;
+        height: 1056px;
+        position: relative;
+        overflow: visible;
+        border: 9px solid rgba(0, 0, 0, .01);
+        background-clip: content-box;
+        border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAQAAADYWf5HAAAA6UlEQVR4Xl2Pi2rEMAwE16fm1f7/r14v7w4rI0IzLAF7hLxNevBSEMEF5+OilNCsRd8ZMyn+a4NmsOT8WJw1lFbSYgGFzF2bLFoLjTClWjKKGRWpDYAGXUnZ4uhbBUzF3Oe/GG/ue2fn4GgsyXhNgysV2JnrhKEMg4fEZcALmiKbNhBBRFpSyDOj1G4QOVly6O1FV54ZZq8OVygrciDt6JazRgi1ljTPH0gbrPmHPXAbCiDd4GawIjip1TPh9tt2sz24qaCjr/jAb/GBFTbq9KZ7Ke/Cqt8nayUikZKsWZK7Fe6bg5dOUt8fZHWG2BHc+6EAAAAASUVORK5CYII=") 9 9 repeat;
+        background-color: #fff;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+        margin: 0 25px 25px
+    }
+
+    [_nghost-oia-c91] .pdfViewer.removePageBorders .page {
+        margin: 24px auto;
+        border: none;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23)
+    }
+
+    [_nghost-oia-c91] .pdfViewer.removePageBorders {
+        padding-bottom: 0
+    }
+
+    [_nghost-oia-c91] .pdfViewer.singlePageView {
+        display: inline-block
+    }
+
+    [_nghost-oia-c91] .pdfViewer.singlePageView .page {
+        margin: 0;
+        border: none
+    }
+
+    [_nghost-oia-c91] .pdfViewer.scrollHorizontal, [_nghost-oia-c91] .pdfViewer.scrollWrapped, [_nghost-oia-c91] .spread {
+        margin-left: 3.5px;
+        margin-right: 3.5px;
+        text-align: center
+    }
+
+    [_nghost-oia-c91] .pdfViewer.scrollHorizontal, [_nghost-oia-c91] .spread {
+        white-space: nowrap
+    }
+
+    [_nghost-oia-c91] .pdfViewer.removePageBorders, [_nghost-oia-c91] .pdfViewer.scrollHorizontal .spread, [_nghost-oia-c91] .pdfViewer.scrollWrapped .spread {
+        margin-left: 0;
+        margin-right: 0
+    }
+
+    [_nghost-oia-c91] .pdfViewer.scrollHorizontal .page, [_nghost-oia-c91] .pdfViewer.scrollHorizontal .spread, [_nghost-oia-c91] .pdfViewer.scrollWrapped .page, [_nghost-oia-c91] .pdfViewer.scrollWrapped .spread, [_nghost-oia-c91] .spread .page {
+        display: inline-block;
+        vertical-align: middle
+    }
+
+    [_nghost-oia-c91] .pdfViewer.scrollHorizontal .page, [_nghost-oia-c91] .pdfViewer.scrollWrapped .page, [_nghost-oia-c91] .spread .page {
+        margin-left: -3.5px;
+        margin-right: -3.5px
+    }
+
+    [_nghost-oia-c91] .pdfViewer.removePageBorders.scrollHorizontal .page, [_nghost-oia-c91] .pdfViewer.removePageBorders.scrollWrapped .page, [_nghost-oia-c91] .pdfViewer.removePageBorders .spread .page {
+        margin-left: 5px;
+        margin-right: 5px
+    }
+
+    [_nghost-oia-c91] .pdfViewer .page canvas {
+        margin: 0;
+        display: block
+    }
+
+    [_nghost-oia-c91] .pdfViewer .page canvas[hidden] {
+        display: none
+    }
+
+    [_nghost-oia-c91] .pdfViewer .page .loadingIcon {
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: url("data:image/gif;base64,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") 50% no-repeat
+    }
+
+    [_nghost-oia-c91] .pdfPresentationMode .pdfViewer {
+        margin-left: 0;
+        margin-right: 0
+    }
+
+    [_nghost-oia-c91] .pdfPresentationMode .pdfViewer .page, [_nghost-oia-c91] .pdfPresentationMode .pdfViewer .spread {
+        display: block
+    }
+
+    [_nghost-oia-c91] .pdfPresentationMode .pdfViewer .page, [_nghost-oia-c91] .pdfPresentationMode .pdfViewer.removePageBorders .page {
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    [_nghost-oia-c91] .pdfPresentationMode:-moz-full-screen .pdfViewer .page, [_nghost-oia-c91] .pdfPresentationMode:-webkit-full-screen .pdfViewer .page, [_nghost-oia-c91] .pdfPresentationMode:fullscreen .pdfViewer .page {
+        margin-bottom: 100%;
+        border: 0
+    }</style>
+</head>
+
+<body class="fuse-splash-screen-hidden light theme-default">
+
+<!-- Splash screen -->
+<fuse-splash-screen>
+    <img src="{% static 'Emblem_of_Uzbekistan.svg' %}" alt="Fuse logo">
+    <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
+</fuse-splash-screen>
+
+{% if object is not None %}
+<!-- App root -->
+<app-root _nghost-oia-c77="" ng-version="12.2.17" fuse-version="13.6.2">
+    <router-outlet _ngcontent-oia-c77=""></router-outlet>
+    <layout class="ng-star-inserted"><!----><!----><!----><!---->
+        <modern-layout class="ng-star-inserted"><!---->
+            <div class="flex flex-col flex-auto w-full min-w-0">
+                <div class="relative flex flex-0 items-center w-full h-16 sm:h-20 px-4 md:px-6 z-49 shadow dark:shadow-none dark:border-b bg-card dark:bg-transparent print:hidden">
+                    <div class="flex items-center gap-2 lg:mr-8">
+                        <button mat-icon-button="" class="mat-focus-indicator mat-icon-button mat-button-base"><span
+                                class="mat-button-wrapper"><mat-icon role="img" svgicon="feather:menu"
+                                                                     class="mat-icon notranslate mat-icon-no-color"
+                                                                     aria-hidden="true" data-mat-icon-type="svg"
+                                                                     data-mat-icon-name="menu"
+                                                                     data-mat-icon-namespace="feather"><svg x="384"
+                                                                                                            y="288"
+                                                                                                            viewBox="0 0 24 24"
+                                                                                                            fit=""
+                                                                                                            height="100%"
+                                                                                                            width="100%"
+                                                                                                            preserveAspectRatio="xMidYMid meet"
+                                                                                                            focusable="false">
+            <path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor"
+                  d="M3 12h18M3 6h18M3 18h18"></path>
+        </svg></mat-icon></span><span matripple=""
+                                      class="mat-ripple mat-button-ripple mat-button-ripple-round"></span><span
+                                class="mat-button-focus-overlay"></span></button>
+                        <div class="hidden lg:flex ng-star-inserted"><img src="{% static 'Emblem_of_Uzbekistan.svg' %}"
+                                                                          class="dark:hidden w-12"><img
+                                src="{% static 'Emblem_of_Uzbekistan.svg' %}" class="hidden dark:flex w-12"></div>
+                        <img src="{% static 'Emblem_of_Uzbekistan.svg' %}" class="flex lg:hidden w-8 ng-star-inserted">
+                        <div class="flex flex-col items-start ng-star-inserted">
+                            <div class="font-medium">Ижро интизоми</div>
+                            <div class="text-secondary text-small">Идоралараро ягона электрон тизими</div>
+                        </div><!----><!----></div>
+                    <div class="flex items-center pl-2 ml-auto space-x-0.5 sm:space-x-2">
+                        <search class="ng-tns-c81-0 search-appearance-bar ng-star-inserted">
+                            <button mat-icon-button=""
+                                    class="mat-focus-indicator mat-icon-button mat-button-base ng-tns-c81-0 ng-star-inserted"><span
+                                    class="mat-button-wrapper"><mat-icon role="img"
+                                                                         class="mat-icon notranslate mat-icon-no-color"
+                                                                         aria-hidden="true" data-mat-icon-type="svg"
+                                                                         data-mat-icon-name="search"
+                                                                         data-mat-icon-namespace="heroicons_outline"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" fit="" height="100%" width="100%"
+                                    preserveAspectRatio="xMidYMid meet" focusable="false">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg></mat-icon></span><span matripple=""
+                                      class="mat-ripple mat-button-ripple mat-button-ripple-round"></span><span
+                                    class="mat-button-focus-overlay"></span></button><!----><!----><!----><!----><!---->
+                            <!----><!----><!----></search>
+                    </div>
+                </div>
+                <div class="flex flex-col flex-auto w-full">
+                    <router-outlet class="ng-star-inserted"></router-outlet>
+                    <app-document-view class="ng-star-inserted">
+                        <div class="absolute inset-0 flex flex-col min-w-0 overflow-hidden ng-star-inserted">
+                            <mat-drawer-container class="mat-drawer-container flex-auto h-full">
+                                <div class="mat-drawer-backdrop ng-star-inserted"></div><!---->
+                                <div class="cdk-visually-hidden cdk-focus-trap-anchor" aria-hidden="true"></div>
+                                <mat-drawer tabindex="-1"
+                                            class="mat-drawer w-90 dark:bg-gray-900 sm:w-70 ng-tns-c102-1 ng-trigger ng-trigger-transform mat-drawer-side mat-drawer-opened ng-star-inserted"
+                                            style="transform: none; visibility: visible;">
+                                    <div cdkscrollable="" class="mat-drawer-inner-container ng-tns-c102-1">
+                                        <div class="flex flex-col items-start p-4 border-b ng-tns-c102-1"><!---->
+                                            <div class="mt-3 text-2xl font-semibold">{{ object.id }}</div>
+                                            <div class="text-secondary">Чикувчи хужжат</div>
+                                            <div class="text-sm">26 сен 2022</div>
+                                            <div class="mt-6 flex items-center leading-5 text-md text-secondary ng-star-inserted"
+                                                 style="">
+                                                <mat-icon role="img"
+                                                          class="mat-icon notranslate icon-size-8 text-secondary mat-icon-no-color"
+                                                          aria-hidden="true" data-mat-icon-type="svg"
+                                                          data-mat-icon-name="mail_send"
+                                                          data-mat-icon-namespace="iconsmind">
+                                                    <svg width="100%" height="100%" viewBox="0 0 36 32" x="952" y="2688"
+                                                         fit="" preserveAspectRatio="xMidYMid meet" focusable="false">
+                                                        <path d="M8 12.267h-7.467c-0.294 0-0.533-0.239-0.533-0.533s0.239-0.533 0.533-0.533h7.467c0.293 0 0.533 0.239 0.533 0.533s-0.24 0.533-0.533 0.533z"></path>
+                                                        <path d="M6.933 16.533h-6.4c-0.294 0-0.533-0.239-0.533-0.533s0.239-0.533 0.533-0.533h6.4c0.293 0 0.533 0.239 0.533 0.533s-0.24 0.533-0.533 0.533z"></path>
+                                                        <path d="M5.867 20.8h-5.333c-0.294 0-0.533-0.24-0.533-0.533s0.239-0.533 0.533-0.533h5.333c0.293 0 0.533 0.24 0.533 0.533s-0.24 0.533-0.533 0.533z"></path>
+                                                        <path d="M29.188 26.133h-17.333c-0.809 0-1.535-0.349-2.047-0.982-0.557-0.689-0.777-1.637-0.582-2.535l2.881-13.586c0.369-1.714 2.083-3.163 3.748-3.163h17.333c0.841 0 1.582 0.347 2.092 0.976 0.53 0.656 0.726 1.534 0.538 2.41l-2.882 13.585c-0.342 1.591-1.929 3.296-3.747 3.296zM15.855 6.933c-1.177 0-2.438 1.084-2.704 2.319l-2.882 13.585c-0.126 0.588 0.012 1.202 0.369 1.644 0.305 0.378 0.737 0.586 1.217 0.586h17.333c1.247 0 2.455-1.294 2.704-2.452l2.88-13.585c0.121-0.56 0.002-1.113-0.323-1.516-0.302-0.374-0.752-0.579-1.263-0.579l-17.331-0.001z"></path>
+                                                        <path d="M22.825 19.020c-0.080 0-0.16-0.003-0.242-0.012-0.839-0.073-1.587-0.522-2.106-1.266l-4.964-7.090c-0.169-0.241-0.111-0.574 0.131-0.742 0.24-0.169 0.574-0.111 0.742 0.131l4.962 7.091c0.335 0.478 0.805 0.769 1.325 0.815 0.515 0.046 1.034-0.156 1.445-0.571l7.355-7.355c0.207-0.208 0.546-0.208 0.754 0 0.207 0.208 0.207 0.546 0 0.754l-7.35 7.356c-0.578 0.579-1.3 0.889-2.052 0.889z"></path>
+                                                        <path d="M28.301 21.537c-0.149 0-0.294-0.064-0.401-0.183l-3.296-3.764c-0.194-0.222-0.171-0.558 0.051-0.752 0.221-0.194 0.556-0.173 0.753 0.049l3.295 3.765c0.195 0.223 0.172 0.557-0.050 0.752-0.103 0.090-0.228 0.133-0.352 0.133z"></path>
+                                                        <path d="M14.101 21.668c-0.156 0-0.311-0.068-0.417-0.201-0.185-0.23-0.147-0.563 0.082-0.75l6.021-4.814c0.229-0.185 0.564-0.146 0.75 0.083 0.183 0.23 0.146 0.565-0.083 0.751l-6.021 4.815c-0.098 0.078-0.214 0.115-0.332 0.115z"></path>
+                                                    </svg>
+                                                </mat-icon>
+                                                <div class="ml-1.5">{{ object.document_address}}</div>
+                                            </div><!----><!----></div>
+                                        <div class="flex flex-col items-start p-4 border-b gap-2 ng-star-inserted"
+                                             style="">
+                                            <div class="font-medium">Ким томонидан имзоланган</div>
+                                            <div class="flex items-center leading-5 text-md text-secondary cursor-pointer ng-star-inserted">
+                                                <mat-icon role="img"
+                                                          class="mat-icon notranslate icon-size-6 text-secondary mat-icon-no-color"
+                                                          aria-hidden="true" data-mat-icon-type="svg"
+                                                          data-mat-icon-name="user-circle"
+                                                          data-mat-icon-namespace="heroicons_outline">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                         viewBox="0 0 24 24" stroke="currentColor" fit="" height="100%"
+                                                         width="100%" preserveAspectRatio="xMidYMid meet"
+                                                         focusable="false">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                              stroke-width="2"
+                                                              d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                                    </svg>
+                                                </mat-icon>
+                                                <div class="ml-1.5"> {{ object.who_signed }} <!----><!---->
+                                                    <!----></div>
+                                            </div><!----></div>
+                                        <div class="flex flex-col items-start p-4 border-b gap-2 ng-star-inserted"
+                                             style="">
+                                            <div class="font-medium">Ҳужжат ижрочиси</div>
+                                            <div class="flex items-center leading-5 text-md text-secondary cursor-pointer">
+                                                <mat-icon role="img"
+                                                          class="mat-icon notranslate icon-size-6 text-secondary mat-icon-no-color"
+                                                          aria-hidden="true" data-mat-icon-type="svg"
+                                                          data-mat-icon-name="user-circle"
+                                                          data-mat-icon-namespace="heroicons_outline">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                         viewBox="0 0 24 24" stroke="currentColor" fit="" height="100%"
+                                                         width="100%" preserveAspectRatio="xMidYMid meet"
+                                                         focusable="false">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                              stroke-width="2"
+                                                              d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                                    </svg>
+                                                </mat-icon>
+                                                <div class="ml-1.5"> {{ object.performer}}</div>
+                                            </div>
+                                        </div><!---->
+                                        <div class="flex flex-col items-start p-4 border-b gap-2 ng-star-inserted"
+                                             style="">
+                                            <div class="font-medium">ЭРИ берган ташкилот</div>
+                                            <div class="flex items-center leading-5 text-md">
+                                                <mat-icon role="img"
+                                                          class="mat-icon notranslate icon-size-6 text-secondary mat-icon-no-color"
+                                                          aria-hidden="true" data-mat-icon-type="svg"
+                                                          data-mat-icon-name="clipboard-check"
+                                                          data-mat-icon-namespace="heroicons_outline">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                         viewBox="0 0 24 24" stroke="currentColor" fit="" height="100%"
+                                                         width="100%" preserveAspectRatio="xMidYMid meet"
+                                                         focusable="false">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                              stroke-width="2"
+                                                              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
+                                                    </svg>
+                                                </mat-icon>
+                                                <div class="ml-1.5"> {{ object.given_by_ERI }}</div>
+                                            </div>
+                                        </div><!---->
+                                        <div class="flex flex-col items-start p-4 border-b gap-2 ng-star-inserted"
+                                             style="">
+                                            <div class="font-medium">ЭРИ амал қилиш муддати</div>
+                                            <div class="flex items-center leading-5 text-md text-secondary">
+                                                <mat-icon role="img"
+                                                          class="mat-icon notranslate icon-size-6 text-secondary mat-icon-no-color"
+                                                          aria-hidden="true" data-mat-icon-type="svg"
+                                                          data-mat-icon-name="calendar"
+                                                          data-mat-icon-namespace="feather">
+                                                    <svg x="720" y="48" viewBox="0 0 24 24" fit="" height="100%"
+                                                         width="100%" preserveAspectRatio="xMidYMid meet"
+                                                         focusable="false">
+                                                        <path fill="none" stroke-linejoin="round" stroke-linecap="round"
+                                                              stroke-width="2" stroke="currentColor"
+                                                              d="M5 4h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2zM16 2v4M8 2v4M3 10h18"></path>
+                                                    </svg>
+                                                </mat-icon>
+                                                <div class="ml-1.5"> {{ start_ERI}} - {{ end_ERI}} <!----><!---->
+                                                    <!----></div>
+                                            </div>
+                                        </div><!----><!---->
+                                        <div class="flex flex-col items-start p-4 border-b gap-2 ng-star-inserted"
+                                             style="">
+                                            <div class="font-medium">Имзоланган ҳужжат</div>
+                                            <div mattooltip="Кўчириб олиш"
+                                                 class="mat-tooltip-trigger flex items-center leading-5 text-md text-secondary cursor-pointer"
+                                                 aria-describedby="cdk-describedby-message-0" cdk-describedby-host="">
+                                                <mat-icon role="img"
+                                                          class="mat-icon notranslate icon-size-6 text-secondary mat-icon-no-color"
+                                                          aria-hidden="true" data-mat-icon-type="svg"
+                                                          data-mat-icon-name="document-text"
+                                                          data-mat-icon-namespace="heroicons_outline">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                         viewBox="0 0 24 24" stroke="currentColor" fit="" height="100%"
+                                                         width="100%" preserveAspectRatio="xMidYMid meet"
+                                                         focusable="false">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                              stroke-width="2"
+                                                              d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                                    </svg>
+                                                </mat-icon>
+                                                <div class="ml-1.5"> {{ object.id }}.pdf</div>
+                                            </div><!----></div><!----><!----><!----><!----></div>
+                                </mat-drawer>
+                                <div class="cdk-visually-hidden cdk-focus-trap-anchor" aria-hidden="true"></div>
+                                <mat-drawer-content class="mat-drawer-content flex flex-col overflow-y-auto"
+                                                    style="margin-left: 360px;"><!----><!---->
+                                    <lib-ng-pdf-viewer class="min-w-full sm:w-200">
+                                        <pdf-viewer-core _nghost-oia-c91="">
+                                            <div _ngcontent-oia-c91="" class="ng2-pdf-viewer-container">
+                                                <div _ngcontent-oia-c91="" class="pdfViewer removePageBorders">
+                                                    <div class="page" data-page-number="1" data-loaded="true"
+                                                         style="width: 793px; height: 1122px;">
+                                                        <div class="canvasWrapper"
+                                                             style="width: 793px; height: 1122px;">
+                                                            <canvas id="page1" width="794" height="1123"
+                                                                    style="width: 794px; height: 1123px; position: absolute; z-index: 20;"></canvas>
+                                                            <div class="canvas-container"
+                                                                 style="width: 794px; height: 1123px; position: relative; user-select: none;">
+                                                                <canvas tabindex="1000" id="ijro-modify-page1"
+                                                                        width="794" height="1123" class="lower-canvas"
+                                                                        style="width: 794px; height: 1123px; position: absolute; z-index: 30; left: 0px; top: 0px; touch-action: none; user-select: none;"></canvas>
+                                                                <canvas class="upper-canvas " width="794" height="1123"
+                                                                        style="width: 794px; height: 1123px; position: absolute; z-index: 30; left: 0px; top: 0px; touch-action: none; user-select: none;"></canvas>
+                                                            </div>
+                                                        </div>
+                                                        <div class="textLayer" style="width: 793px; height: 1122px;">
+                                                            <div class="endOfContent"></div>
+                                                        </div>
+                                                        <div class="annotationLayer">
+                                                            <section data-annotation-id="14R" class="linkAnnotation"
+                                                                     style="transform: matrix(1.33333, 0, 0, 1.33333, 0, 0); transform-origin: -290.25px -154.4px; left: 290.25px; top: 154.4px; width: 84.05px; height: 11.25px;">
+                                                                <a title="mailto:qibrayarxiv@exat.uz"
+                                                                   href="mailto:qibrayarxiv@exat.uz" target=""
+                                                                   rel="noopener noreferrer nofollow"></a></section>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </pdf-viewer-core>
+                                    </lib-ng-pdf-viewer>
+                                </mat-drawer-content><!----></mat-drawer-container>
+                        </div><!----><!----></app-document-view><!----><!----></div>
             </div>
-        </fuse-splash-screen>
+        </modern-layout><!----><!----><!----><!----><!----><!----><!----></layout><!----></app-root>
+{% else %}
+<app-root _nghost-law-c77="" ng-version="12.2.17" fuse-version="13.6.2">
+    <router-outlet _ngcontent-law-c77="">
 
-        <!-- App root -->
-        {% if object is not None %}
-            <app-root _nghost-oia-c77="" ng-version="12.2.17" fuse-version="13.6.2"><router-outlet _ngcontent-oia-c77=""></router-outlet><layout class="ng-star-inserted"><!----><!----><!----><!----><modern-layout class="ng-star-inserted"><!----><div class="flex flex-col flex-auto w-full min-w-0"><div class="relative flex flex-0 items-center w-full h-16 sm:h-20 px-4 md:px-6 z-49 shadow dark:shadow-none dark:border-b bg-card dark:bg-transparent print:hidden"><div class="flex items-center gap-2 lg:mr-8"><button mat-icon-button="" class="mat-focus-indicator mat-icon-button mat-button-base"><span class="mat-button-wrapper"><mat-icon role="img" svgicon="feather:menu" class="mat-icon notranslate mat-icon-no-color" aria-hidden="true" data-mat-icon-type="svg" data-mat-icon-name="menu" data-mat-icon-namespace="feather"><svg x="384" y="288" viewBox="0 0 24 24" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
-                <path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" d="M3 12h18M3 6h18M3 18h18"></path>
-            </svg></mat-icon></span><span matripple="" class="mat-ripple mat-button-ripple mat-button-ripple-round"></span><span class="mat-button-focus-overlay"></span></button><div class="hidden lg:flex ng-star-inserted"><img src="{% static 'Emblem_of_Uzbekistan.svg' %}" class="dark:hidden w-12"><img src="{% static 'Emblem_of_Uzbekistan.svg' %}" class="hidden dark:flex w-12"></div><img src="{% static 'Emblem_of_Uzbekistan.svg' %}" class="flex lg:hidden w-8 ng-star-inserted"><div class="flex flex-col items-start ng-star-inserted"><div class="font-medium">Ижро интизоми</div><div class="text-secondary text-small">Идоралараро ягона электрон тизими</div></div><!----><!----></div><div class="flex items-center pl-2 ml-auto space-x-0.5 sm:space-x-2"><search class="ng-tns-c81-0 search-appearance-bar ng-star-inserted"><button mat-icon-button="" class="mat-focus-indicator mat-icon-button mat-button-base ng-tns-c81-0 ng-star-inserted"><span class="mat-button-wrapper"><mat-icon role="img" class="mat-icon notranslate mat-icon-no-color" aria-hidden="true" data-mat-icon-type="svg" data-mat-icon-name="search" data-mat-icon-namespace="heroicons_outline"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-            </svg></mat-icon></span><span matripple="" class="mat-ripple mat-button-ripple mat-button-ripple-round"></span><span class="mat-button-focus-overlay"></span></button><!----><!----><!----><!----><!----><!----><!----><!----></search></div></div><div class="flex flex-col flex-auto w-full"><router-outlet class="ng-star-inserted"></router-outlet><app-document-view class="ng-star-inserted"><div class="absolute inset-0 flex flex-col min-w-0 overflow-hidden ng-star-inserted"><mat-drawer-container class="mat-drawer-container flex-auto h-full"><div class="mat-drawer-backdrop ng-star-inserted"></div><!----><div class="cdk-visually-hidden cdk-focus-trap-anchor" aria-hidden="true"></div><mat-drawer tabindex="-1" class="mat-drawer w-90 dark:bg-gray-900 sm:w-70 ng-tns-c102-1 ng-trigger ng-trigger-transform mat-drawer-side mat-drawer-opened ng-star-inserted" style="transform: none; visibility: visible;"><div cdkscrollable="" class="mat-drawer-inner-container ng-tns-c102-1"><div class="flex flex-col items-start p-4 border-b ng-tns-c102-1"><!----><div class="mt-3 text-2xl font-semibold">{{ object.id }}</div><div class="text-secondary">Чикувчи хужжат</div><div class="text-sm">{{ date }}</div><div class="mt-6 flex items-center leading-5 text-md text-secondary ng-star-inserted" style=""><mat-icon role="img" class="mat-icon notranslate icon-size-8 text-secondary mat-icon-no-color" aria-hidden="true" data-mat-icon-type="svg" data-mat-icon-name="mail_send" data-mat-icon-namespace="iconsmind"><svg width="100%" height="100%" viewBox="0 0 36 32" x="952" y="2688" fit="" preserveAspectRatio="xMidYMid meet" focusable="false">
-                <path d="M8 12.267h-7.467c-0.294 0-0.533-0.239-0.533-0.533s0.239-0.533 0.533-0.533h7.467c0.293 0 0.533 0.239 0.533 0.533s-0.24 0.533-0.533 0.533z"></path>
-                <path d="M6.933 16.533h-6.4c-0.294 0-0.533-0.239-0.533-0.533s0.239-0.533 0.533-0.533h6.4c0.293 0 0.533 0.239 0.533 0.533s-0.24 0.533-0.533 0.533z"></path>
-                <path d="M5.867 20.8h-5.333c-0.294 0-0.533-0.24-0.533-0.533s0.239-0.533 0.533-0.533h5.333c0.293 0 0.533 0.24 0.533 0.533s-0.24 0.533-0.533 0.533z"></path>
-                <path d="M29.188 26.133h-17.333c-0.809 0-1.535-0.349-2.047-0.982-0.557-0.689-0.777-1.637-0.582-2.535l2.881-13.586c0.369-1.714 2.083-3.163 3.748-3.163h17.333c0.841 0 1.582 0.347 2.092 0.976 0.53 0.656 0.726 1.534 0.538 2.41l-2.882 13.585c-0.342 1.591-1.929 3.296-3.747 3.296zM15.855 6.933c-1.177 0-2.438 1.084-2.704 2.319l-2.882 13.585c-0.126 0.588 0.012 1.202 0.369 1.644 0.305 0.378 0.737 0.586 1.217 0.586h17.333c1.247 0 2.455-1.294 2.704-2.452l2.88-13.585c0.121-0.56 0.002-1.113-0.323-1.516-0.302-0.374-0.752-0.579-1.263-0.579l-17.331-0.001z"></path>
-                <path d="M22.825 19.020c-0.080 0-0.16-0.003-0.242-0.012-0.839-0.073-1.587-0.522-2.106-1.266l-4.964-7.090c-0.169-0.241-0.111-0.574 0.131-0.742 0.24-0.169 0.574-0.111 0.742 0.131l4.962 7.091c0.335 0.478 0.805 0.769 1.325 0.815 0.515 0.046 1.034-0.156 1.445-0.571l7.355-7.355c0.207-0.208 0.546-0.208 0.754 0 0.207 0.208 0.207 0.546 0 0.754l-7.35 7.356c-0.578 0.579-1.3 0.889-2.052 0.889z"></path>
-                <path d="M28.301 21.537c-0.149 0-0.294-0.064-0.401-0.183l-3.296-3.764c-0.194-0.222-0.171-0.558 0.051-0.752 0.221-0.194 0.556-0.173 0.753 0.049l3.295 3.765c0.195 0.223 0.172 0.557-0.050 0.752-0.103 0.090-0.228 0.133-0.352 0.133z"></path>
-                <path d="M14.101 21.668c-0.156 0-0.311-0.068-0.417-0.201-0.185-0.23-0.147-0.563 0.082-0.75l6.021-4.814c0.229-0.185 0.564-0.146 0.75 0.083 0.183 0.23 0.146 0.565-0.083 0.751l-6.021 4.815c-0.098 0.078-0.214 0.115-0.332 0.115z"></path>
-            </svg></mat-icon><div class="ml-1.5">{{ object.document_address}}</div></div><!----><!----></div><div class="flex flex-col items-start p-4 border-b gap-2 ng-star-inserted" style=""><div class="font-medium">Ким томонидан имзоланган</div><div class="flex items-center leading-5 text-md text-secondary cursor-pointer ng-star-inserted"><mat-icon role="img" class="mat-icon notranslate icon-size-6 text-secondary mat-icon-no-color" aria-hidden="true" data-mat-icon-type="svg" data-mat-icon-name="user-circle" data-mat-icon-namespace="heroicons_outline"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg></mat-icon><div class="ml-1.5"> {{ object.who_signed }} <!----><!----><!----></div></div><!----></div><div class="flex flex-col items-start p-4 border-b gap-2 ng-star-inserted" style=""><div class="font-medium">Ҳужжат ижрочиси</div><div class="flex items-center leading-5 text-md text-secondary cursor-pointer"><mat-icon role="img" class="mat-icon notranslate icon-size-6 text-secondary mat-icon-no-color" aria-hidden="true" data-mat-icon-type="svg" data-mat-icon-name="user-circle" data-mat-icon-namespace="heroicons_outline"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg></mat-icon><div class="ml-1.5"> {{ object.performer}} </div></div></div><!----><div class="flex flex-col items-start p-4 border-b gap-2 ng-star-inserted" style=""><div class="font-medium">ЭРИ берган ташкилот</div><div class="flex items-center leading-5 text-md"><mat-icon role="img" class="mat-icon notranslate icon-size-6 text-secondary mat-icon-no-color" aria-hidden="true" data-mat-icon-type="svg" data-mat-icon-name="clipboard-check" data-mat-icon-namespace="heroicons_outline"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
-            </svg></mat-icon><div class="ml-1.5"> "{{ object.given_by_ERI}} </div></div></div><!----><div class="flex flex-col items-start p-4 border-b gap-2 ng-star-inserted" style=""><div class="font-medium">ЭРИ амал қилиш муддати</div><div class="flex items-center leading-5 text-md text-secondary"><mat-icon role="img" class="mat-icon notranslate icon-size-6 text-secondary mat-icon-no-color" aria-hidden="true" data-mat-icon-type="svg" data-mat-icon-name="calendar" data-mat-icon-namespace="feather"><svg x="720" y="48" viewBox="0 0 24 24" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
-                <path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" d="M5 4h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2zM16 2v4M8 2v4M3 10h18"></path>
-            </svg></mat-icon><div class="ml-1.5"> {{ start_ERI}} - {{ end_ERI}} <!----><!----><!----></div></div></div><!----><!----><div class="flex flex-col items-start p-4 border-b gap-2 ng-star-inserted" style=""><div class="font-medium">Имзоланган ҳужжат</div><div mattooltip="Кўчириб олиш" class="mat-tooltip-trigger flex items-center leading-5 text-md text-secondary cursor-pointer" aria-describedby="cdk-describedby-message-0" cdk-describedby-host=""><mat-icon role="img" class="mat-icon notranslate icon-size-6 text-secondary mat-icon-no-color" aria-hidden="true" data-mat-icon-type="svg" data-mat-icon-name="document-text" data-mat-icon-namespace="heroicons_outline"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-            </svg></mat-icon><div class="ml-1.5"> {{ object.id }}.pdf </div></div><!----></div><!----><!----><!----><!----></div></mat-drawer><div class="cdk-visually-hidden cdk-focus-trap-anchor" aria-hidden="true"></div><mat-drawer-content class="mat-drawer-content flex flex-col overflow-y-auto" style="margin-left: 360px;"><!----><!----><lib-ng-pdf-viewer class="min-w-full sm:w-200"><pdf-viewer-core _nghost-oia-c91=""><div _ngcontent-oia-c91="" class="ng2-pdf-viewer-container"><div _ngcontent-oia-c91="" class="pdfViewer removePageBorders"><div class="page" data-page-number="1" data-loaded="true" style="width: 793px; height: 1122px;"><div class="canvasWrapper" style="width: 793px; height: 1122px;"><canvas id="page1" width="794" height="1123" style="width: 794px; height: 1123px; position: absolute; z-index: 20;"></canvas><div class="canvas-container" style="width: 794px; height: 1123px; position: relative; user-select: none;"><canvas tabindex="1000" id="ijro-modify-page1" width="794" height="1123" class="lower-canvas" style="width: 794px; height: 1123px; position: absolute; z-index: 30; left: 0px; top: 0px; touch-action: none; user-select: none;"></canvas><canvas class="upper-canvas " width="794" height="1123" style="width: 794px; height: 1123px; position: absolute; z-index: 30; left: 0px; top: 0px; touch-action: none; user-select: none;"></canvas>
-                <embed src="{{ object.FileURL }}" type="application/pdf" width="100%" height="600px">
-            </div></div><div class="textLayer" style="width: 793px; height: 1122px;">
-            <div class="endOfContent"></div></div><div class="annotationLayer"><section data-annotation-id="14R" class="linkAnnotation" style="transform: matrix(1.33333, 0, 0, 1.33333, 0, 0); transform-origin: -290.25px -154.4px; left: 290.25px; top: 154.4px; width: 84.05px; height: 11.25px;"><a title="mailto:qibrayarxiv@exat.uz" href="mailto:qibrayarxiv@exat.uz" target="" rel="noopener noreferrer nofollow"></a></section></div></div></div></div></pdf-viewer-core></lib-ng-pdf-viewer></mat-drawer-content><!----></mat-drawer-container></div><!----><!----></app-document-view><!----><!----></div></div></modern-layout><!----><!----><!----><!----><!----><!----><!----></layout><!----></app-root>
-            {% else %}
-                <!-- App root -->
-        <app-root _nghost-law-c77="" ng-version="12.2.17" fuse-version="13.6.2">
-            <router-outlet _ngcontent-law-c77="">
-
-            </router-outlet>
-            <layout class="ng-star-inserted"><!----><!----><!----><!---->
-                <modern-layout class="ng-star-inserted"><!---->
-                    <div class="flex flex-col flex-auto w-full min-w-0">
-                        <div class="relative flex flex-0 items-center w-full h-16 sm:h-20 px-4 md:px-6 z-49 shadow dark:shadow-none dark:border-b bg-card dark:bg-transparent print:hidden">
-                            <div class="flex items-center gap-2 lg:mr-8">
-                                <button mat-icon-button="" class="mat-focus-indicator mat-icon-button mat-button-base">
+    </router-outlet>
+    <layout class="ng-star-inserted"><!----><!----><!----><!---->
+        <modern-layout class="ng-star-inserted"><!---->
+            <div class="flex flex-col flex-auto w-full min-w-0">
+                <div class="relative flex flex-0 items-center w-full h-16 sm:h-20 px-4 md:px-6 z-49 shadow dark:shadow-none dark:border-b bg-card dark:bg-transparent print:hidden">
+                    <div class="flex items-center gap-2 lg:mr-8">
+                        <button mat-icon-button="" class="mat-focus-indicator mat-icon-button mat-button-base">
                                     <span class="mat-button-wrapper">
-                                        <mat-icon role="img" svgicon="feather:menu" class="mat-icon notranslate mat-icon-no-color" aria-hidden="true" data-mat-icon-type="svg" data-mat-icon-name="menu" data-mat-icon-namespace="feather">
-                                            <svg x="384" y="288" viewBox="0 0 24 24" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
-                                                <path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" d="M3 12h18M3 6h18M3 18h18"></path>
+                                        <mat-icon role="img" svgicon="feather:menu"
+                                                  class="mat-icon notranslate mat-icon-no-color" aria-hidden="true"
+                                                  data-mat-icon-type="svg" data-mat-icon-name="menu"
+                                                  data-mat-icon-namespace="feather">
+                                            <svg x="384" y="288" viewBox="0 0 24 24" fit="" height="100%" width="100%"
+                                                 preserveAspectRatio="xMidYMid meet" focusable="false">
+                                                <path fill="none" stroke-linejoin="round" stroke-linecap="round"
+                                                      stroke-width="2" stroke="currentColor"
+                                                      d="M3 12h18M3 6h18M3 18h18"></path>
                                             </svg>
                                         </mat-icon></span>
-                                    <span matripple="" class="mat-ripple mat-button-ripple mat-button-ripple-round"></span>
-                                    <span class="mat-button-focus-overlay"></span>
-                                </button>
-                                <div class="hidden lg:flex ng-star-inserted">
-                                    <img src="{% static 'Emblem_of_Uzbekistan.svg' %}" class="dark:hidden w-12">
-                                    <img src="{% static 'Emblem_of_Uzbekistan.svg' %}" class="hidden dark:flex w-12">
-                                </div>
-                                <img src="{% static 'Emblem_of_Uzbekistan.svg' %}" class="flex lg:hidden w-8 ng-star-inserted">
-                                <div class="flex flex-col items-start ng-star-inserted">
-                                    <div class="font-medium">
-                                        Ижро интизоми
-                                    </div>
-                                    <div class="text-secondary text-small">
-                                        Идоралараро ягона электрон тизими
-                                    </div>
-                                </div><!----><!---->
+                            <span matripple="" class="mat-ripple mat-button-ripple mat-button-ripple-round"></span>
+                            <span class="mat-button-focus-overlay"></span>
+                        </button>
+                        <div class="hidden lg:flex ng-star-inserted">
+                            <img src="{% static 'Emblem_of_Uzbekistan.svg' %}" class="dark:hidden w-12">
+                            <img src="{% static 'Emblem_of_Uzbekistan.svg' %}" class="hidden dark:flex w-12">
+                        </div>
+                        <img src="{% static 'Emblem_of_Uzbekistan.svg' %}" class="flex lg:hidden w-8 ng-star-inserted">
+                        <div class="flex flex-col items-start ng-star-inserted">
+                            <div class="font-medium">
+                                Ижро интизоми
                             </div>
-                            <div class="flex items-center pl-2 ml-auto space-x-0.5 sm:space-x-2">
-                                <search class="ng-tns-c81-0 search-appearance-bar ng-star-inserted">
-                                    <button mat-icon-button="" class="mat-focus-indicator mat-icon-button mat-button-base ng-tns-c81-0 ng-star-inserted">
+                            <div class="text-secondary text-small">
+                                Идоралараро ягона электрон тизими
+                            </div>
+                        </div><!----><!---->
+                    </div>
+                    <div class="flex items-center pl-2 ml-auto space-x-0.5 sm:space-x-2">
+                        <search class="ng-tns-c81-0 search-appearance-bar ng-star-inserted">
+                            <button mat-icon-button=""
+                                    class="mat-focus-indicator mat-icon-button mat-button-base ng-tns-c81-0 ng-star-inserted">
                                         <span class="mat-button-wrapper">
-                                            <mat-icon role="img" class="mat-icon notranslate mat-icon-no-color" aria-hidden="true" data-mat-icon-type="svg" data-mat-icon-name="search" data-mat-icon-namespace="heroicons_outline">
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                            <mat-icon role="img" class="mat-icon notranslate mat-icon-no-color"
+                                                      aria-hidden="true" data-mat-icon-type="svg"
+                                                      data-mat-icon-name="search"
+                                                      data-mat-icon-namespace="heroicons_outline">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                     stroke="currentColor" fit="" height="100%" width="100%"
+                                                     preserveAspectRatio="xMidYMid meet" focusable="false">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                          stroke-width="2"
+                                                          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                                                 </svg>
                                             </mat-icon>
                                         </span>
-                                        <span matripple="" class="mat-ripple mat-button-ripple mat-button-ripple-round"></span>
-                                        <span class="mat-button-focus-overlay"></span>
-                                    </button><!----><!----><!----><!----><!----><!----><!----><!---->
-                                </search></div></div><div class="flex flex-col flex-auto w-full">
-                        <router-outlet class="ng-star-inserted"></router-outlet>
-                        <app-document-view class="ng-star-inserted"><!---->
-                            <div class="flex flex-col items-center w-full pt-10 ng-star-inserted">
-                                <svg fill="#1e293b" viewBox="0 0 32 32" x="0" y="2744" preserveAspectRatio="xMidYMid meet" focusable="false" class="max-w-30">
-                                    <path d="M15.467 24.267h-14.933c-0.294 0-0.533-0.24-0.533-0.533v-12.933c0-4.337 3.588-7.867 8-7.867s8 3.529 8 7.867v12.933c0 0.293-0.239 0.533-0.533 0.533zM1.067 23.2h13.867v-12.4c0-3.749-3.11-6.8-6.933-6.8s-6.933 3.050-6.933 6.8v12.4z"></path>
-                                    <path d="M31.467 24.267h-16.533c-0.294 0-0.533-0.24-0.533-0.533s0.239-0.533 0.533-0.533h16v-12.4c0-3.686-3.211-6.8-7.012-6.8h-15.388c-0.294 0-0.533-0.239-0.533-0.533s0.239-0.533 0.533-0.533h15.388c4.379 0 8.079 3.602 8.079 7.867v12.933c0 0.293-0.24 0.533-0.533 0.533z"></path>
-                                    <path d="M29.333 15.733h-3.2c-0.293 0-0.533-0.239-0.533-0.533v-5.333c0-0.294 0.24-0.533 0.533-0.533h3.2c0.293 0 0.533 0.239 0.533 0.533v5.333c0 0.294-0.24 0.533-0.533 0.533zM26.667 14.667h2.133v-4.267h-2.133v4.267z"></path>
-                                    <path d="M26.667 10.4h-7.467c-0.293 0-0.533-0.239-0.533-0.533s0.24-0.533 0.533-0.533h7.467c0.293 0 0.533 0.239 0.533 0.533s-0.24 0.533-0.533 0.533z"></path>
-                                    <path d="M11.733 21.067h-7.467c-0.294 0-0.533-0.24-0.533-0.533s0.239-0.533 0.533-0.533h7.467c0.294 0 0.533 0.24 0.533 0.533s-0.239 0.533-0.533 0.533z"></path>
-                                    <path d="M19.733 29.067c-0.293 0-0.533-0.24-0.533-0.533v-4.267h-5.333v4.267c0 0.293-0.239 0.533-0.533 0.533s-0.533-0.24-0.533-0.533v-4.8c0-0.293 0.239-0.533 0.533-0.533h6.4c0.293 0 0.533 0.24 0.533 0.533v4.8c0 0.293-0.24 0.533-0.533 0.533z"></path>
-                                </svg>
-                                <h1 class="text-center text-2xl"> Ҳужжат топилмади </h1>
-                            </div><!---->
-                        </app-document-view><!----><!---->
+                                <span matripple="" class="mat-ripple mat-button-ripple mat-button-ripple-round"></span>
+                                <span class="mat-button-focus-overlay"></span>
+                            </button><!----><!----><!----><!----><!----><!----><!----><!---->
+                        </search>
                     </div>
-                    </div>
-                </modern-layout><!----><!----><!----><!----><!----><!----><!---->
-            </layout><!---->
-        </app-root>
-        {% endif %}
+                </div>
+                <div class="flex flex-col flex-auto w-full">
+                    <router-outlet class="ng-star-inserted"></router-outlet>
+                    <app-document-view class="ng-star-inserted"><!---->
+                        <div class="flex flex-col items-center w-full pt-10 ng-star-inserted">
+                            <svg fill="#1e293b" viewBox="0 0 32 32" x="0" y="2744" preserveAspectRatio="xMidYMid meet"
+                                 focusable="false" class="max-w-30">
+                                <path d="M15.467 24.267h-14.933c-0.294 0-0.533-0.24-0.533-0.533v-12.933c0-4.337 3.588-7.867 8-7.867s8 3.529 8 7.867v12.933c0 0.293-0.239 0.533-0.533 0.533zM1.067 23.2h13.867v-12.4c0-3.749-3.11-6.8-6.933-6.8s-6.933 3.050-6.933 6.8v12.4z"></path>
+                                <path d="M31.467 24.267h-16.533c-0.294 0-0.533-0.24-0.533-0.533s0.239-0.533 0.533-0.533h16v-12.4c0-3.686-3.211-6.8-7.012-6.8h-15.388c-0.294 0-0.533-0.239-0.533-0.533s0.239-0.533 0.533-0.533h15.388c4.379 0 8.079 3.602 8.079 7.867v12.933c0 0.293-0.24 0.533-0.533 0.533z"></path>
+                                <path d="M29.333 15.733h-3.2c-0.293 0-0.533-0.239-0.533-0.533v-5.333c0-0.294 0.24-0.533 0.533-0.533h3.2c0.293 0 0.533 0.239 0.533 0.533v5.333c0 0.294-0.24 0.533-0.533 0.533zM26.667 14.667h2.133v-4.267h-2.133v4.267z"></path>
+                                <path d="M26.667 10.4h-7.467c-0.293 0-0.533-0.239-0.533-0.533s0.24-0.533 0.533-0.533h7.467c0.293 0 0.533 0.239 0.533 0.533s-0.24 0.533-0.533 0.533z"></path>
+                                <path d="M11.733 21.067h-7.467c-0.294 0-0.533-0.24-0.533-0.533s0.239-0.533 0.533-0.533h7.467c0.294 0 0.533 0.24 0.533 0.533s-0.239 0.533-0.533 0.533z"></path>
+                                <path d="M19.733 29.067c-0.293 0-0.533-0.24-0.533-0.533v-4.267h-5.333v4.267c0 0.293-0.239 0.533-0.533 0.533s-0.533-0.24-0.533-0.533v-4.8c0-0.293 0.239-0.533 0.533-0.533h6.4c0.293 0 0.533 0.24 0.533 0.533v4.8c0 0.293-0.24 0.533-0.533 0.533z"></path>
+                            </svg>
+                            <h1 class="text-center text-2xl"> Ҳужжат топилмади </h1>
+                        </div><!---->
+                    </app-document-view><!----><!---->
+                </div>
+            </div>
+        </modern-layout><!----><!----><!----><!----><!----><!----><!---->
+    </layout><!---->
+</app-root>
+{% endif %}
 
-    <script src="{% static 'runtime.2498d2a8a4fc8773b294.js.Без названия' %}" defer=""></script><script src="{% static 'polyfills.fd0e8ca299601d56c5f2.js.Без названия' %}" defer=""></script><script src="{% static 'main.1e7bf4823a40d31a5615.js.Без названия' %}" defer=""></script>
+<script src="{% static 'runtime.2498d2a8a4fc8773b294.js.Без названия' %}" defer=""></script>
+<script src="{% static 'polyfills.fd0e8ca299601d56c5f2.js.Без названия' %}" defer=""></script>
+<script src="{% static 'main.1e7bf4823a40d31a5615.js.Без названия' %}" defer=""></script>
 
 
-<div id="cdk-describedby-message-container" class="cdk-visually-hidden" style="visibility: hidden;"><div id="cdk-describedby-message-0" role="tooltip">Кўчириб олиш</div></div></body></html>
-
+<div id="cdk-describedby-message-container" class="cdk-visually-hidden" style="visibility: hidden;">
+    <div id="cdk-describedby-message-0" role="tooltip">Кўчириб олиш</div>
+</div>
+</body>
+</html>
