@@ -17,9 +17,3 @@ urlpatterns = [
 
 urlpatterns += static(STATIC_URL, document_root=STATIC_ROOT)
 urlpatterns += static(MEDIA_URL, document_root=MEDIA_ROOT)
-
-
-if not settings.DEBUG:
-    urlpatterns += [
-        re_path(r'^files/(?P<path>.*)$', serve, {'document_root': settings.BASE_DIR + '/files/'}),
-    ]
