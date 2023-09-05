@@ -3,9 +3,7 @@ from django.urls import path, include  # add this
 from .settings import *
 from django.conf.urls.static import static
 from apps.home.views import get_file_guid, test_ijro
-from django.conf import settings
-from django.urls import re_path
-from django.views.static import serve
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
