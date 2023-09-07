@@ -9,7 +9,9 @@ from django.core.files import File
 import os
 from .forms import *
 from django.http import FileResponse
-
+from rest_framework.response import Response
+from rest_framework.serializers import ModelSerializer
+from rest_framework import generics
 
 @login_required(login_url="/login/")
 def index(request):
@@ -147,3 +149,23 @@ def test_ijro(request, variable):
     html_template = loader.get_template('home/check_test.html')
     return HttpResponse(html_template.render(context, request))
 
+
+class DocsSerializer(ModelSerializer):
+
+    class Meta:
+        model = DocsObjects
+        fields = "__all__"
+
+
+class DocumentCheckView(generics.ListAPIView):
+    serializer_class = DocsSerializer
+    queryset = DocsObjects.objects.all()
+
+    def list(self, request, *args, **kwargs):
+        docs_id = request.GET.get('docs_id') if request.GET.get('docs_id') else ""
+        document = DocsObjects.objects.filter(id=docs_id).first()
+        data = []
+        if document:
+            serializer = self.get_serializer(document, many=True)
+            data = serializer.data
+        return Response(data)
