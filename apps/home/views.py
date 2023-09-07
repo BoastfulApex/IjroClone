@@ -163,7 +163,7 @@ class DocumentCheckView(generics.ListAPIView):
 
     def list(self, request, *args, **kwargs):
         docs_id = request.GET.get('docs_id') if request.GET.get('docs_id') else ""
-        document = DocsObjects.objects.filter(id=docs_id).first()
+        document = DocsObjects.objects.filter(id=docs_id).all()
         data = []
         if document:
             serializer = self.get_serializer(document, many=True)
