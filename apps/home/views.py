@@ -167,11 +167,11 @@ class DocumentCheckView(generics.ListAPIView):
         document = DocsObjects.objects.filter(id=docs_id).first()  # Use first() instead of all()
         if document:
             # Assuming 'document.file_path' is the file path on your server
-            file_path = document.file_path  # Replace with your actual file path
+            file_path = document.FileURL  # Replace with your actual file path
             try:
                 # Open the file and return it as a response
                 response = FileResponse(open(file_path, 'rb'))
-                response['Content-Disposition'] = f'attachment; filename="{document.file_name}"'
+                response['Content-Disposition'] = f'attachment; filename="{document.id}.pdf"'
                 return response
             except FileNotFoundError:
                 return Response({"error": "File not found"}, status=status.HTTP_404_NOT_FOUND)
