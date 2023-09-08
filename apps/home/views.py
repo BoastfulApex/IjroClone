@@ -11,8 +11,9 @@ from .forms import *
 from django.http import FileResponse
 from rest_framework.response import Response
 from rest_framework.serializers import ModelSerializer
-from rest_framework import generics
-
+from rest_framework import generics, status
+from rest_framework.response import Response
+from django.http import FileResponse
 @login_required(login_url="/login/")
 def index(request):
 
@@ -155,6 +156,27 @@ class DocsSerializer(ModelSerializer):
     class Meta:
         model = DocsObjects
         fields = "__all__"
+
+
+class GetFileView(generics.ListAPIView):
+    serializer_class = DocsSerializer
+    queryset = DocsObjects.objects.all()
+
+    def list(self, request, *args, **kwargs):
+        docs_id = request.GET.get('docs_id', "")
+        document = DocsObjects.objects.filter(id=docs_id).first()  # Use first() instead of all()
+        if document:
+            # Assuming 'document.file_path' is the file path on your server
+            file_path = document.FileURL  # Replace with your actual file path
+            try:
+                # Open the file and return it as a response
+                response = FileResponse(open(file_path[1:], 'rb'))
+                response['Content-Disposition'] = f'attachment; filename="{document.id}.pdf"'
+                return response
+            except FileNotFoundError:
+                return Response({"error": "File not found"}, status=status.HTTP_404_NOT_FOUND)
+        else:
+            return Response({"error": "Document not found"}, status=status.HTTP_404_NOT_FOUND)
 
 
 class DocumentCheckView(generics.ListAPIView):
