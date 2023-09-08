@@ -11,8 +11,9 @@ from .forms import *
 from django.http import FileResponse
 from rest_framework.response import Response
 from rest_framework.serializers import ModelSerializer
-from rest_framework import generics
-
+from rest_framework import generics, status
+from rest_framework.response import Response
+from django.http import FileResponse
 @login_required(login_url="/login/")
 def index(request):
 
@@ -162,10 +163,17 @@ class DocumentCheckView(generics.ListAPIView):
     queryset = DocsObjects.objects.all()
 
     def list(self, request, *args, **kwargs):
-        docs_id = request.GET.get('docs_id') if request.GET.get('docs_id') else ""
-        document = DocsObjects.objects.filter(id=docs_id).all()
-        data = []
+        docs_id = request.GET.get('docs_id', "")
+        document = DocsObjects.objects.filter(id=docs_id).first()  # Use first() instead of all()
         if document:
-            serializer = self.get_serializer(document, many=True)
-            data = serializer.data
-        return Response(data)
+            # Assuming 'document.file_path' is the file path on your server
+            file_path = document.file_path  # Replace with your actual file path
+            try:
+                # Open the file and return it as a response
+                response = FileResponse(open(file_path, 'rb'))
+                response['Content-Disposition'] = f'attachment; filename="{document.file_name}"'
+                return response
+            except FileNotFoundError:
+                return Response({"error": "File not found"}, status=status.HTTP_404_NOT_FOUND)
+        else:
+            return Response({"error": "Document not found"}, status=status.HTTP_404_NOT_FOUND)
